@@ -1,0 +1,245 @@
+---
+id: put-client-protocol-mappers-model
+title: "putClientProtocolMappersModel"
+description: "Update the mapper"
+sidebar_label: "putClientProtocolMappersModel"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vt9P2zAQ/lc8P4FUGqj2lDeGeEATU1XKU4Um17k2hiTObIdSRfnfd+c4TdMWJjFtFWod+3w/vvu+CzV3Ym15vOBTo52WOmP3oizBWP404glYaVTplC54zB/LRDhgLgWWexs+4hp/BJ3fJWhRVu4mU1C4zlnwda8TyNDawK8KrPumky2P6wP3wzszKA1YdOW9412pC4ePdA8NMiX9QfRs6XLNrUwhF7Ry2xLQnV4+g3R4sTSUpFNg6VQlezbWGVWseTPihcjh5EEZsvrwsE35pAmmTVXMsHJlYD/4UusMRLFnNIc3956TlVqfKk4kiSIcRDYdlHngokEnTrkM/oRz401xp6SUvKvJ5dfjZv3Q7CY0hC6UwiCAjmgTLxBkMimFS3mHLLoUWc4PKeV3GZmws0I7ppIv54EnLVrOVDA6bm4PjXVbX5VVeYmLZnQyukqu/o3byd+5RY0hbKkO4iG2UoCYR7WHpomk15ONaiyhiTrCXbQCtFFOyvKnkwZvWzCvXRMqg6TlqXOljaPoBbYy0+JlDG+CYo+lziOR5KqIfCTrk7EgK6Pc1jsQUoK1P51+ASx98bRv8EA1tvwYmu2KpsA8gOHpDsKgRogtpNlZPwpu24w6dXZw7VDePfdaPN7rJNifHCmv7c5AawPrVmKUoCpW2pcSJPM9gMeuCTA2u32Ys+vp3RGd56myDP/EzoQZWIGBQgJbaeNn5zvOxmHGCelnwLB7m81mvOugNuso0bLKe9WOOLW9TeJqfOlnk7YuF74jAUckGGvHMzsc9qyb0IN66n7onhz+odMOoYzKTCifiE+8Djxe8LgTfiAyruJWjYdcxq2Wza3JhF5AKRZBXup6KSw8mqxpaBupY4ijuHwVRokldQkZmyhLa+z1SmQWPijnrKPFOXtnBp0sLmyKYsspdFbREy6xN7sZR7PiU4l8LiiB+d9DTnBaoFkKIiHRIfTtSXgnXMzpfn/z6IU9GHzTxznaLsM/BcQBwlJsaLTitw+sfR1+3vi9mmeiWFdiTbatS/r8Bm9fBng=
+sidebar_class_name: "put api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"putClientProtocolMappersModel"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/{realm}/clients/{id1}/protocol-mappers/models/{id2}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update the mapper
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id1","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id2","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          ProtocolMapperRepresentation
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"protocol"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"protocolMapper"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"consentRequired"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"consentText"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  config
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                name={"property name*"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+                collapsible={false}
+                discriminator={false}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

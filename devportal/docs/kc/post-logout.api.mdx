@@ -1,0 +1,105 @@
+---
+id: post-logout
+title: "postLogout"
+description: "Remove all user sessions associated with the user Also send notification to all clients that have an admin URL to invalidate the sessions for the particular user."
+sidebar_label: "postLogout"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVMFu2zAM/RVNpxYI4nZH34phh2IFVqTtKSgGVmZiIbLkSnTSwPC/j1Qco+naHbrTgACWKeY98vHRvSZYJ10u9UPCmPTjTFeYTLQt2eB1qRfYhC0qcE51nKESpsQ3SUFKwVggrNTOUq2oxkPGlUuB03ylfCC7sgYESlHIIMZZ9JQ4HUjVINBeQdVYrx4WN5Jl/RacrRg5Y06EqxBzoIVI1nQOYuab65kOLcbMcl1xyW1IdBPWoSO+ipha/jdyj73+enEpj9MOv0WULvQwzDRjQ4MkSpTLXlu5b4FqBvJ8wW+c7Br9VqUcVZKizrhrZasv55n8ubORsUuKHc50MjU2ICXQvhW0RNH6tWbmRHuXI7Zp+TDM3mW31b+h8ni5vTocZdKzA0Gpiz73MBSiaSp6Ww2FO4rIoe1Rky46Tq+J2lQWxQb3xgXYzPEFhGJuQlPkcRYZL2XOhKaLlvYZAIzhkf6isEFucPn4OuFOWjnM6jRt6k2I9dizvD8hRIx5eNavQs60lJv+MdamrrK9Ft/v7tXV7fUfw7uvbVL8gylFRVxhRG9wct0HYOI+EzyBIaE+FWe3280ngUJcF1UwXcP2z16V+YiqhyIu5xcSkKE0kBseRy4RNdn5pPI+UzPe/7Kn4wwJX6hoHdisQdasH3241OVxw7IR+Vlm049eZK/U4ltO7PsnSPgQ3TBI+LnDKAbj4xaihSfxANutsknO7PgVuIR/kfBsMS7Wufpgn9+tfwyC32uhdp288ZEnP30vZJ0/VcjnSFmx4XF4teu3P+/ueUd+A2glCnk=
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postLogout"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/users/{id}/logout"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove all user sessions associated with the user Also send notification to all clients that have an admin URL to invalidate the sessions for the particular user.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Created
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

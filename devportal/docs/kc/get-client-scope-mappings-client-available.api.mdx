@@ -1,0 +1,169 @@
+---
+id: get-client-scope-mappings-client-available
+title: "getClientScopeMappingsClientAvailable"
+description: "The available client-level roles Returns the roles for the client that can be associated with the client’s scope"
+sidebar_label: "getClientScopeMappingsClientAvailable"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVc1u2zAMfhVNpxZI425H34KhGIpi2NBmp6IYGJmp1cqSK8lJA8PAXmOvtycZKTtpvLQ7dNgWFAlNfebPx49qKyPcBplfyyvlahQfoa61Jc/NRBYYlNd11M7KXM5LFLACbWBhUCij0cYTgys0wjuDQVxibLwNIhKw9yydT089mEyIQoEVC4oUglMaIhZirWO5B/vx7XsQgYuRE0nfHriA84JKuMX4PmFSrdtSe9dsWxq95THUzgakvlr57vSUf8bNfLogmHI20pt8SqGMVilTdhcY0sqgSqyArbihYnLpFneoouz4M5E1eKgwomf2Wqk5bA2xpMCWDujJI5hK/spj8gqGiCProtDFm+NU80OjPVKb0Tc4OcweoqduJWUOcWOSR1c1Gd3k2ey6+BtR+xn9WWSSFhFXumGkctLnyGXWJnK6rM8SslYXXZa0cFIN0346640ug73JB/Sr7UQabyhmGWMd8iy7x40yDu6n+AhcxlS5KoOi0jZLSUOqK6BqvI6bFACUwhC+RnePRMT1zT7gitvtBTaG7frnxHLghZ8XCB69ZOlou3QJqWMi5mKoTcy4HnF5djUXs8/nB9KZlzoI+oMdRHhcokercLdsLwSbDoIHlQQ/Jme9Xk93BDl/mxVONRWxmzaCZ8is9kW8nZ6yo3YhVpAaHqRBoxT9LorxXbL17q/oqLH2aRX/zzUzjCziY8xqAzq1nChqB21ey3y7zoMAycrTjo31OQbs1uVJpCSikrjjkG27gIBfvOk6dj806Fl5ZK7A64RmHRY6sE3rsgQT8DfkHV0OW3ksXrhmnu10cILdSE5tGn4ikySxu8b4PnhVIa9LSsz+44zDqLobQpYIBe0qk98fzmjH67j32sE/jNGt9uFsTov+E/+siIE=
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getClientScopeMappingsClientAvailable"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/scope-mappings/clients/{client}/available"}
+>
+  
+</MethodEndpoint>
+
+
+
+The available client-level roles Returns the roles for the client that can be associated with the client’s scope
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"client","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

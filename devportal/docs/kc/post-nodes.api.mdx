@@ -1,0 +1,154 @@
+---
+id: post-nodes
+title: "postNodes"
+description: "Register a cluster node with the client Manually register cluster node to this client - usually it’s not needed to call this directly as adapter should handle by sending registration request to Keycloak"
+sidebar_label: "postNodes"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVM1uEzEQfhXjUyuFbMsxt1L1UCGgSsMpitDEnmRNvfZie5uuVpF4DV6PJ2HGu0lIfziUG6sosmc+z+8308kE6ygnc3lpDboU5WIkNUYVTJ2Md3Iip7g2MWEQIJRt8sl5jWJjUilSiSTll+IjuAasbUXYPTiCJ09gE3fot6KJPdykXz9+RgIl4RA1aoYqUvV4bQKqRDiIAjTUbDCWvrFalOC0RbFsRUSnjVsPrgNw6HT53mBMbO4Dtsp6uJMj6Wvs9deakqt9TJ8ovEiaAf/e61ZOukdVmJNZ8rAgnPIuUQqMgbq2RmVzxbfIwE5GVWIFfEptjfS0fym39LGTWHsXySEB3p2dP/V0GRASasnoGgJUSClzizppWF9DKikKRwq6EdhW8nHPslQwRJxwYY1+czpkSOWkxFNocPRyqKRKrc0SU9V02I6e9W70v1klslF6pd+1Qo56BxNZdDmHbdHzJRad0dvCDa2KGO53RWmCJXyZUh0nRXE3dHqMD8A+xspXBejKuCIbjNlpRNUEk9psAJTCGL8mf4eU4XzxJ+CWc+mbdQzbJ8eO5ZA035cIAUPuHjNieiDVVR/RoSAjKunKZ1smZcWOp+KCIxbTq9uZuLi5ftLfGU8G/WAPIbavMKBTKFY+5Ll8wdh4oDCoTOHj8m02m/G+hD6sC+1VU1EDMse5hVz3Pojz8RkLuG8V5JIMrGCJ2E3VUeDdYXj+t70y0CHhQypqCyYXKxe3Gzg9l5PdtA6kptMkj1DPa+JdyUNAyK5bQsQvwW63LCaHgclKx3sIBpbMFqKuNpHPND4rsBH/Uu2T6TClp+KF5fBsAoMQXCvZtW34RkfiyH758G54VSCvc0oF2y4IVSJoGjQuQ6+47H28nfHzw8MnO/po69x8vp0ReDks/YoawYnBhhcb/WfHPueRt0CWddKCWzewZmxvk7/fkgyI6g==
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postNodes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/clients/{id}/nodes"}
+>
+  
+</MethodEndpoint>
+
+
+
+Register a cluster node with the client Manually register cluster node to this client - usually it’s not needed to call this directly as adapter should handle by sending registration request to Keycloak
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          [string]
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+        >
+          
+          
+          string
+          
+          
+        </div>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Created
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

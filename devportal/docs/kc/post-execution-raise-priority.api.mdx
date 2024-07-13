@@ -1,0 +1,105 @@
+---
+id: post-execution-raise-priority
+title: "postExecutionRaisePriority"
+description: "Raise execution’s priority"
+sidebar_label: "postExecutionRaisePriority"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVNtu2zAM/RVNTy2Qxe0e/RYMfSiGYUGSPQXBwNpMLMSWXEnOBYaB/cZ+b18yUnEcO203oAMCRKIY8vDwnNTSw8bJeCknlc9Qe5WAV0aLr6BhgwVF5GokU3SJVSW/yFjOQDkUeMCk4sjvn7+cKK0yVvmjHElTog1FHlNKLo3zD+fU8MvpJdWiK412SAhq+enunr+GvT5bBI+pbJqRLMFCgR4tA66l4vcSfEaFND3QjZLzQl7jDVHBKeJGGy9U+uE2NH+ulKXasbcVjqRLMiyAIfhjydWct0pvJHV2/piHiCpKOjSjV7t3jNDg1xg6Cqj7//WmdRAJmTmTK0cnGLGM6jBpE8Fgl1GHy0V1D2MTWV7Hx97qHNrdmd7K5lQz8750cRRt8ZjkBrZjPADjGCemiCAtlI5CUxeAOSoeSnEBSBJ07oc3WyQGlqt+wpznPa19mNYRwI1lSwzfnxAs2qADpdcmZCofmPnSYhMTxiNmD/OFmEwfX+xgkSkn6ANdirC4Ros6QbE2VhBr4o1iY6qWGO0h8dx6SM5+vx93BBm7iVKTVOydwD8vkVk9gbgf33GAN1dAGLhVD0fERSYnk/W8MpilDmDYnf+0Y8unx4OPyhxUwBPw161wljI+G2eoHApctEOXeKjwK/nQejPWI9Wr6ydw+N3mTcPh5wota4KOO7AKnnhtpJBUOT6TkteQO/zLjDez1jC34g03vzpmGwTNROwgr/hGR1pW92/BZn4XkCtLvwNAn85m1fSMPf02X5DW/wDxafRm
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postExecutionRaisePriority"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/authentication/executions/{executionId}/raise-priority"}
+>
+  
+</MethodEndpoint>
+
+
+
+Raise execution’s priority
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"executionId","description":"Execution id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Created
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+---
+id: delete-session
+title: "deleteSession"
+description: "Remove a specific user session."
+sidebar_label: "deleteSession"
+hide_title: true
+hide_table_of_contents: true
+api: eJydU8GK2zAQ/RVVp10w8bb05NvS5rC0lJKkpxCKVp7EIrak1cjJBuN/74zsZJPtbimBQMbSY96beU+djGqDsljKGai6QXFfNsbKVSZLQB2Mj8ZZWdBt43YglEAP2qyNFi1CEAiIBJjITDoPQTH6oSR8CTVEmA/XdBsAvbMEl0UnP9195r9Lhh9OfHE2go2y7zPpVVANtQgsrpOGIV7FinpZuqCvwILla6HpVDBE3FgXhSk/3Cb+p9YEIGkxtJBJ1BU0ilXEg+duGIOxG0nMGA91OjGNp6LP3mTHs9Gubk1rphkr97IxmQ08hcy7NEqfj0yYd2PVE4iWvzvupg014asYPRZ5voWDrp3aTuBZMctEuyZX7GqeGmKiRdBtMPGQGiitqfPv6LZAgy5X54A5TzPYdgk7jcfEchybvx9BBQjJRGPXLiFNTHN/G7UNKROz6Xwh7n8+/GXiojIo6KdOEBFgDQGsBrF2QcQKxDvNOIuagqR0ZOrL5ez3+8lpQS5s8tLptqHMpeSyRbzVQcTHyR0feIexUWng0frBKfES7gvxXWLnGP/Pqxl3GOE55r5WJmlImrsxCEtZHJN+TAKVxTF/ZFVFChnXdY8K4Veo+56Pn1oI7C+VOxWMemQLyO3SINeUubWqEf4h/2Y2RvtWvPOs3pQ/Hip7kExdt/xFJS3+9Gz5VV0l5DrS47b6VX/25L5Ov08XU0rqH58KthE=
+sidebar_class_name: "delete api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"deleteSession"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/{realm}/sessions/{session}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove a specific user session.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"session","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

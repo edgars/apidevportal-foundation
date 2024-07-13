@@ -1,0 +1,159 @@
+---
+id: get-client-session-stats
+title: "getClientSessionStats"
+description: "Get client session stats Returns a JSON map."
+sidebar_label: "getClientSessionStats"
+hide_title: true
+hide_table_of_contents: true
+api: eJyVU99v2jAQ/lc8P7USJWyPvKGpqrpK6wTsCaHpcA7iksSufSlFEf/77pzAymgnLS+xz/fr++67VhNsoh4v9BShrKKa5JWt9XKgc4wmWE/W1Xqs75CUKS3WpCLGyEYVCSiqKVIT6qhAfZs9flcV+KEeaOcxgITe5xy8QfqaYmdd6Ewi2Stg9K7mfHrc6i+jkfzOyz4+sJtxNXGwvIL3pTUpc/YUxaXV0RRYgZxo75GD3OoJDemDfAPtIUCFhEFQttpKWg9UcOKaH/gWBLn+G3GyKnFRV7UjZfNP16nn58YGZFgUGhxcVo8UbL3RXDnSvkwWW3k+HJhUbqRwPSV60PUx1lmbih2yjuGbnuGb2PMUMbwc+29CyREFkY/jLNvi3pQOtkN8BSkyNK7KQEaYpZQxVY1ommBpnxKAMZz+F7ktMszF8q3DTMB04zh3O6GTwrpHLfcVQsCghWhbr13ytJRgP/S9dZJS09vZXE1+3F8QPS9sVFYUdHRRAdcYsDao1i4oKlB9kGzYywNMksc5ObvdbngiyIVNljvTVExw0o9MSFjtmvg8HInBu0gVJMC9OHhQqhOv6tWrjvI9g9H+ken/LktPLeErZb4Em1pLUNpeIQs9Por0XYnwCAvuXBzbdgURf4bycBDzc4NB5s7HFwgWVjIaVkFuo5xZimsoI/4DzNW0V/y1+mAl3u2/N0K911K6bOTGRx7IaeUOS3YsEHJWkDTVvU1YeZ7eRF0s/dkm3d3OWX6/AbuEoyU=
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getClientSessionStats"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/client-session-stats"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get client session stats Returns a JSON map.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

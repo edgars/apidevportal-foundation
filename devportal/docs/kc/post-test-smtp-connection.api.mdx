@@ -1,0 +1,149 @@
+---
+id: post-test-smtp-connection
+title: "postTestSmtpConnection"
+description: "Test SMTP connection with current logged in user"
+sidebar_label: "postTestSmtpConnection"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2kAQ/SvbPSUSxbRH39IohyiqgoCeEKqG9WBvsb3b3XUIsvzfO7N2oA6hhyKE1rPP8/HeG1oZIPcyXcsFQll5cZdVupabiczQK6dt0KaWqVyhD2L5fTUXytQ1Kg6Lgw6FUI1zWAdRmjzHTOhaNB6dnEhj0QHjHjNKYI0PnGRZBXt/SkEwh78bin8z2VGm7buyax+crvMN4ahuoDqMAWtLrWLu5JdnYCu9KrACPoWjRXq1f1N29OEi3prao2fA19nsstLzk2SgBQcVBnTMSSs1X1kIBTVQ0wU9OeZJvucnRgVDxE1tgtDZp9thOO2QCAiuwcn1LukqHMsY0ZWlQ0cSUCOFeSNPTvpGUpm0sVqXBOaTNBnxSeS/vLXfuJLwRQjWp0myx6MqDeyn+ApcY6pMlQDrncSEPhb1SIrqcIwJQCn0/mcwe6Qp15u/AUuepWd0DDsNx4XlMDQ/bxEcWYN5ZtkWZ+Uf+o7OhEyI+p2JuXSIF09D971DxeJhuRJ388cLJVaF9oK+cIIIhzskjyoUO+NEKFBcSTYdfAYq+mxM3+FwmJ4oNC5PMqOaiiwZjcgSMu99E1+mMw6wbhVESgb3cET0y0SLIEbKjeZoz4b/n+UbFAj4GhJbgo79xXnawUZrmb5Z+QMfkc4Fm45gbbsFjz9c2XUcJs0cm4OOL+A0bFkdskqmPZ/JrjsoPf5jnJvFsBW34srafNj9EIT6KLl02fATHUmT01p2GwIWCBmRwE31d/d96c8rznB+9+JvZLRz8+flisDb4X+pMlncfjjwWtNvrG3ieHEHYqyVJdR5Azlj+5z8+QNzCdug
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postTestSmtpConnection"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/testSMTPConnection"}
+>
+  
+</MethodEndpoint>
+
+
+
+Test SMTP connection with current logged in user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          [string]
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+        >
+          
+          
+          string
+          
+          
+        </div>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

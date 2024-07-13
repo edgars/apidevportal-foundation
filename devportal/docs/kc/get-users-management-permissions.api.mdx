@@ -1,0 +1,209 @@
+---
+id: get-users-management-permissions
+title: "getUsersManagementPermissions"
+description: "getUsersManagementPermissions"
+sidebar_label: "getUsersManagementPermissions"
+hide_title: true
+hide_table_of_contents: true
+api: eJyFVE1P4zAQ/Sten0CCht1jbxzQCqHVogInhFZTZ9oYEtvYE6CK8t93xg2hoWVXihTH8/Vm3pt0mmCd9PxeLxDqJqnzsrFOP5xoHzACWe8uSz3Xa6S7hDH9AgdrbNDRNcbGpsQOSZ/oiCnwCTlVp3+cncmrxGSiDZKDM/y+YjfjHXGsWCGE2ppcoXhM4tLpZCpsQE60CchBfvmIhjgwRMFDdlsAHSxrLHccl97XCE73GYpvo8Eda6Jo3VqMyXCeXegHakFZWoEF9fWk6qdkPacjS7XcHRrLAlcY0TGQvs/O03n8b6IBIjRI7MHsdNpKTACq2OTYwF9RGNOf8+ZbJS7qyHlStvx2nAl6bm2UmVFs8WR/1Dszok1uKtkm8KFnMTCQyg86yNgYx1wXXS7WF600ctqMnZyGSStsfXnvo401R1ZEIc2L4gk3pvbwNMM3kGIz45sCRIJFTp1y9YSmjZY2OQEYgyn9If+E3O79w67DjTS1JWvqNnYphfXQfdYNQsSohR7rVj57DpxeDdi2K6EWFze36vz6cm/gt5VNih8YXVR8p16tfFRUofoi2WzYCTB5J6bDeX19nY0D8nFdlN60Mt68NMKUTHUL4vvsTC6CT8Q0SK5BJEyYyjpTH0JTU6VN2hknRfhGRajB5koZWTcQf6/n79r7J/PMTMWAJKDrlpDwLtZ9L9fPLUahk48vEK1scya3tGnY7BXUCfewjf8PfbQYBH2svlD8wT6GS3AbLaXrVr74yHMeN6p/YMcKoWRhCKit7ZwFFWgnau8HNlmUnxe3rKq/lz3eBw==
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getUsersManagementPermissions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/users-management-permissions"}
+>
+  
+</MethodEndpoint>
+
+
+
+getUsersManagementPermissions
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"enabled"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"resource"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                scopePermissions
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              name={"property name*"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                              collapsible={false}
+                              discriminator={false}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"enabled\": true,\n  \"resource\": \"string\",\n  \"scopePermissions\": {}\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

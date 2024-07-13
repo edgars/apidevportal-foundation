@@ -1,0 +1,149 @@
+---
+id: get-profile
+title: "getProfile"
+description: "getProfile"
+sidebar_label: "getProfile"
+hide_title: true
+hide_table_of_contents: true
+api: eJx1U8Fu2zAM/RVNpxYI4mxH33IohqKHFW16CoKBkelYi22pEt00MPzvIxXXa5olMBBKeiIfH596TbCLOl/rl4gh6s1MO48ByLr2vtC53iE9BlfaGvVMB4zetRH5Qq9/LBbyV2A0wXq5wPBfDwwzriVsSU7B+9qalC77EwXS62gqbEAiOnrkS5GCbXd6kN/sS8Kz+h4CNEhCNF/32grAA1V81PIBrwJC3eivSdKuEoi6aR0pW3y7Te28djYgt0mhw9l1YnxExzrt2MZzMLBOTKRyo0SJG/PIddanYkPWiZ6Zn7jz8u2DeBdqhlZEPuZZtsejqR3s5/gOkn1uXJNB0dg2S7liKhfRdMHSMSUAYzDG3+T2yP2tN58Bz9LFaUTnsKktKazHdmW9RQgYtIhv29IlpKXU78PITS2Fj3q6e16p5eP9hcKrykbFH0wQFbDEgK1BVbqgqEJ1Jdl8tAyYZJlzcQ6Hw3wSyIVdVjjTNeyu5CkZjah6IvF9vpAN7yI1kBoeXcETUv9cdMZ8EoXwnTJfg01JE4l+HOpa5x++SlOVaY/ZWPeKywmm77cQ8SXUwyDbrx0GGRaHbxAsbEVPHl1ho8RsnBLqiBd0psejb55Gf96qKwb+L/VxE9qjltJ1JysOWcXpgQwbBlYIBY9dSJ3OlmwXT59uXbzeM9//vFuxZ/4CBXBzRQ==
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getProfile"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/users/profile"}
+>
+  
+</MethodEndpoint>
+
+
+
+getProfile
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

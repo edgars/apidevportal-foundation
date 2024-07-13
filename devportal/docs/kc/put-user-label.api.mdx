@@ -1,0 +1,159 @@
+---
+id: put-user-label
+title: "putUserLabel"
+description: "Update a credential label for a user"
+sidebar_label: "putUserLabel"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zAM/SuaTi2Qxd2wk2/t0EOxYSja5BQEAyMxsVbb0iS5aWD4v4+UnbjpxzB02IIgkaknfjw+yq2MsAkyX8h5QB/kciI1BuWNi8bWMpdzpyGiAKE8aqyjgVKUsMJSrK0nc0PH5ERahx74yJWmQ66J7O4r42jT488GQ7yweifz9kmARYje1Jsl4ZStI4VgDDhXGpU8Zj8CA1sZVIEV8CruHNLR/qTs6MNBgrN1wMCAj2efnkf6ZsXnIQIfcOChwshV54tWGoY4iAUlUtMGPXmEspJPGUlWwRBxUtsojH53OhRpiCOZR9/g5PVsaSvuymQxlaNFN3kxutH/wuvYxqu/9E9SIfoKOzRcTvpIuczaRFGXsTZC1hrdZWNYMjzOoUftlULL+31DGl+SsyJGF/Isu8OdKi3cTfEBOP5U2SoDXZk6S9FCSiigaryJu+QAlMIQvkd7h8TDYvkYcMt19lo5hh0K58ByIISfVwiepM7KYUHejJq+7DMayZoQ8WubfJmYNr4M2YtzzljcXN7OxPn11TNtzQoTBH3hABEe1+ixVpgGLhYoXnE2HSYIVJqgY/q22+30QKH1m0xb1VTUhDRi3F7mvU/iw/SMDc6GWEGiZNAOdVnwXIt9u46Sb8f5/dNbY6A64kPMXAkmJZISbwcxLWS+n8KkJvrP02A8EhTbnsh61BT1vKBC2FPbriDg3Jddx2bqn2eh0PIevIEVd4pko03gNcl6Tc7xN1We3AzTcypeuRReLHAwQr2THLps+ImW1J/DpcPT+6ZE3haUKP3PEY8a1i0JXyBoUgW3oIcMl/X7GTsaXTx7NRzdRNfzGWFXw6umsjpd5LDlu45+UwY2FZSGP9laWUK9aWDD2N4lf34BUK1rxg==
+sidebar_class_name: "put api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"putUserLabel"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/{realm}/users/{id}/credentials/{credentialId}/userLabel"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update a credential label for a user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"credentialId","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          [string]
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+        >
+          
+          
+          string
+          
+          
+        </div>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

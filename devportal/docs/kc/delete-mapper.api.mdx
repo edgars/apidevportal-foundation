@@ -1,0 +1,110 @@
+---
+id: delete-mapper
+title: "deleteMapper"
+description: "Delete a mapper for the identity provider"
+sidebar_label: "deleteMapper"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1v2zAM/SuaTi3gxd2wk2/FmkOwDxRtdgqCgbGZWIhtqZKcNDD830fKH02WdsAyDAgQiSb5HslHNdLDxslkIWcZVl75g7i3eqcytE4uI5mhS60yXulKJvIOC/QoQJRgDFqx1lb4HIUaYk0fKyOpyQE4bpZRZBYiv4Uw+mjRGV05JORGfrz5xH+nUN+1+KwrT3ll20bSgIWSMljm2kjFLgZ8Trkq+kA3i1CU8nfGwSrYRVxV2hPTd9cB/6lWFomZtzVG0qU5lsAs/MFwNuetqjaSkJ0/FMGiSkOHNnoVHQoF7n8kVtlZTV0XRfjyD3g0Xeporl/GI6MOPJFxExrXxsNk3w+TjVXlPFQpurgJRbdxJwa6q6ylFA7tbphTbQvKlntvXBLHWzykhYbtBJ+BOUxSXcaQlaqKA5wLpBymtSXIkABSQnI/vd4ilb5YHjs8cq2dhE7dxuIZWPZN4fsKwZL+WFCqWuvgqXzoypeem7hlPuJh+jgXt/ezs+bPc+UE/WB0ERbXaJFaMu7DG8kmlC0lUUPqGfq0Ofv9fjI2SNtNnOm0Lqn7YYl4gNzVjsSHyQ0bjHa+hFBwr5ZujmLcsxPuTQDnjfq7Te6b6fHZx6YAFcgE8k2vl4VMhvU7EwzbBsnQORk2pVcNm0jJNNacquFUTbMChz9s0bZsfqrRshbouAOrYMXjImVkyvGZ1LuGwuEfar166JfkWrzxHLxaYW+E6iAZuqj5Rkca0vjc8NJeROQy0K53F4MePxwXoFNcu2yPXo276dfpfErr9AtDcSLL
+sidebar_class_name: "delete api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"deleteMapper"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/{realm}/identity-provider/instances/{alias}/mappers/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete a mapper for the identity provider
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"alias","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","description":"Mapper id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

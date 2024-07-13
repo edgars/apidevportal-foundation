@@ -1,0 +1,322 @@
+---
+id: get-instance
+title: "getInstance"
+description: "Get the identity provider"
+sidebar_label: "getInstance"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVd9v2jAQ/lcyP7USI90eeaNbW6Fua0W7J1RNR3IQF8dObacURfnfd+ckFEqotE5Cwvg+38/vPirhYenEaCYmKWov/Sa6teZZpmideBiIFF1iZeGl0WIkrtBHPsNIdtiixYqBMAVaYNwkJeQS/UQ7DzpBsll0hdEOKVAlvp6d8de+55trgiVGe3LMVigKJZPgL350DKmESzLMgU9+UyA9MvNHTDw9pDQoupdNAFAS3A7MeSv1UtRUjXSFgs0vyLHXLim+1aC4hB5zV+0RM2qYK9y1zY1RCJqNZZGCR+rtQiq8lNb5H2Yp9U+T9qfiben8RQ5S9ftz3li8NyvU/XZI0ylCGhBTur3R3yxSBkfQJY2VRkodx/PNd1xAqXw/VEm9utFq029dcGXnlqLaUN+lMuvx0XkU5h/AxI6FXPaNn2qVzBRQt3tEeOPi+BT6auEZSK/4rluNbjOmWBCj6S7wk6A1owuwxCvPizOaVYK90p3PKEEdCEdrACoXb5cq3EYMiU608bRcn07DzjyV0jKdiAo4OGT/a2ec34Q8ncwLOtSD3ujNWvyXYxIEqjAz7Ybz5nGIkYirUEUdd8rwuduVWLYy4OIqZFDTK4f2uetTaYnhIvO+cKM4XuEmUQZWQ3wBjjlMTB5DmksdhwguJOEwKS1FCQ4gIefuj292YfawC7jj2lpV2INti+XAom1CmD+CJT2rgxosTEC2NLhuc4vGnE80vbi7j8a3k4OB3mfSRfSBLSSyuECL1IVoYWyQ0CPOhq0MQhLWb7856/V6uG2Qscs4NUmZv/JwILirTRJfhmfdhuUQCm5pQHOLdqR5L/XqVYLf1fq2dx5ffEyCKhuFs0GqGkbMxKhj+wEl+K4jBZ1HDTFpahkly0+rag4Of1tV13z9VKLlUdPxGaxkkQ2DJzVvBXcByuE7tZxMW86fRke2rbei9hL0RnBoVfIvOtIMttvMy/ahRD4WtOlV/UDAjOSdmsmdaGxjYnjhd14d/InuLfDVxT3R/C8vH8Xl
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getInstance"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/identity-provider/instances/{alias}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get the identity provider
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"alias","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"alias"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"displayName"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"internalId"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"providerId"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"enabled"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"updateProfileFirstLoginMode"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"trustEmail"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"storeToken"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"addReadTokenRoleOnCreate"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"authenticateByDefault"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"linkOnly"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"firstBrokerLoginFlowAlias"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"postBrokerLoginFlowAlias"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                config
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              name={"property name*"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                              collapsible={false}
+                              discriminator={false}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"updateProfileFirstLogin"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"alias\": \"string\",\n  \"displayName\": \"string\",\n  \"internalId\": \"string\",\n  \"providerId\": \"string\",\n  \"enabled\": true,\n  \"updateProfileFirstLoginMode\": \"string\",\n  \"trustEmail\": true,\n  \"storeToken\": true,\n  \"addReadTokenRoleOnCreate\": true,\n  \"authenticateByDefault\": true,\n  \"linkOnly\": true,\n  \"firstBrokerLoginFlowAlias\": \"string\",\n  \"postBrokerLoginFlowAlias\": \"string\",\n  \"config\": {},\n  \"updateProfileFirstLogin\": true\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

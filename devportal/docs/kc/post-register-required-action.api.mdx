@@ -1,0 +1,149 @@
+---
+id: post-register-required-action
+title: "postRegisterRequiredAction"
+description: "Register a new required actions"
+sidebar_label: "postRegisterRequiredAction"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVE1v2zAM/SuaTi2Qxu2OvmVFD8UwrEiyUxAMjM3EWmxLk+SmhuH/PlL+SN0sw4wgkKgn8vGRVCM9HJyMN3JR+QxLrxLwSpfiG5RwwIIscjuTKbrEKsMnMpZLPCjn0QoQJZ6Exd+VspgKSBjg5Exqgzb4eU4Jb7Tzw51lD14ELEH5Njr/Rae1jJsPkTbOW1UetoRLdOmZDWHAmLznGf1yDGykSzIsgFe+NkhXu5uypY+DOEPM0DHg8/3DZaRHi+AxlYw2YKFAIsvCNFLxuQGfEYuSDmhH4LyQH3UJVsEQcVNqL1T66bbPkFOWsbcVzq5TpSNf58GiCkOLlqQnIpkeVJSzjkgsoyZEayOY1C2yvc53Q9Q7GJR2aF+HnCqbk5PMe+PiKDpineQajnN8Aw48T3QRQVoo9kdRXGDiMKms8nVwAEmCzv30+oiU+mb7HrDiBDutp7AxYw4seyV4v0OwaIP4XNDluSeeOkZnlWZUj70OvpQPB1979mLBjMXyabUWi5fni/KsM+UE/WCEUOvu0WKZoNhrK0hIccXZvO9AEpNDT+U7nU7zUUJtD1Gqk4pHJ5SE68q6dyQe5vds4GIWECTpW4otYpysYUzEOCeTXJrzOPzHNPaie3zzkclBBUohhaZvp42Mh5ae9lNo3ysdRRXPuCfpdtPswOEPm7ctm6l6ltuElq9gFey4TtQ0qXK8pm7eQ+7wH0ndDALciitT9dekeiOUteTQecU7WlJ1xqlttwTMEFJqOCbVnT12oe/W7OF89+KpmYzky/fVmsC7/u0qdBoeBzixbPQfYmvT1YEAwdbIHMpDRa8rnXc++fsDekPr0A==
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postRegisterRequiredAction"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/authentication/register-required-action"}
+>
+  
+</MethodEndpoint>
+
+
+
+Register a new required actions
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          [string]
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+        >
+          
+          
+          string
+          
+          
+        </div>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Created
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+---
+id: delete-roles-by-id
+title: "deleteRolesById"
+description: "Delete the role"
+sidebar_label: "deleteRolesById"
+hide_title: true
+hide_table_of_contents: true
+api: eJylU8GO2jAQ/RV3TiBlybbqKbfdwgG1qiqWnhCqjDMQiyTO2s6yUZR/74wTKBS2h62EhD2ezHvz5k0LXu4cJCtYmBydGG0aMZ+OYR1Bik5ZXXltSkhgijl6FD5DYSkTIjAVWsmv85Te0/Aeijw2FInAoqtM6ZCqt/Dp/jP/Xdb8bsQXU3osPXRdBJW0sqAilvm0oDmlkj6jWiU90M2izAv4m1qICk4Ro9J4odMP44D/XGuLRM7bGiNwKsNCMgvfVFzNeavLHRCy800eIrqo6NBFt9GpuTudXuHrVJjtUZX/QCXNqf3M/JETop5CAnEbuuxihnF3m4aIUKxn1FGeQ/tyVK62OX2SeV+5JI732KjcyP0EXyUDTZQpYpkWuoxDTReQHaraat+EAlIpdO6XN3ukBlfr84Qnbqgf6mXaqUMGhqFzvm9QWrRhxLrcmpCpfWj968BNPDAfsZg9LcXDj/mVxMtMO0E/eUoRFrdosVQotsYGX75RbELVFNlMKs/Ql+IcDofJSSBjd3FqVF2QI4OzeUqsak/i4+SeA5VxvpCh4cEY/bBEv0GPtEBXHmkDAzb6rU0adPP46uMqlzrgBp7tMP8VJEfvnxmAbsnRlDShjIhxattupMOfNu86Dj/XaHmsdHyRVssNK09DTrXjM7ltK3OH/2A8WgymHos3du1mB0NQlg0wdF7zjY6k92mXedXeReRi6d4DP+jWrbuztZvOvs2WM7Lqb7Iet64=
+sidebar_class_name: "delete api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"deleteRolesById"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/{realm}/roles-by-id/{role-id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete the role
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"role-id","description":"id of role","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

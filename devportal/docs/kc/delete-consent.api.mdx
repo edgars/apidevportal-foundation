@@ -1,0 +1,110 @@
+---
+id: delete-consent
+title: "deleteConsent"
+description: "Revoke consent and offline tokens for particular client from user"
+sidebar_label: "deleteConsent"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VE1v2zAM/SuaTi1gxN2wU25Fl0OxYRjS9FQEgyrTsRBZciU6aWD4v4+UnTRZ2x2yDTBgfdB8j4+P7iSqVZTTB3kfIUS5zGQBUQfToPFOTuUcNn4NQnsXwaFQrhC+LK1xIJAuXBSlD6JRAY1urQpCW8OBZfC1aCmnzKRvICjOd1tQxgIsINwMCek2QGx4Qyw6+enqM79OOXz3gsKRw/s+kwSmakoRmHcnDYc0CivK5eiCdgGUreXvpaRTwSHiwnkUpvhwmfCfWhOAqGFoIZNRV1ArZoG7hrNFDMatJCFH3Nl0YuqGFn32Jrop/kfWQddXRd0Mcv8tJvWdJK38S4NkNhCYyrxLyvU5tzPmnSn6fPQD7QZePYXT7WbflDZY+rJCbOI0z9ew09ar9QSeFeNNtK9zVdTG5Sl1TAQi6DYY3KUESmuI8WfyGB0sjwPuuK7BL6dhh0IZWI4C8P4RVCArsnuMK32KNJgU+DpyE9fMR8xndwtx/eP2ldCLykRBjzqEiAAlBHAa0gxgBeKdZBPKRoqh0sjQp+Jst9vJQSAfVnnhdVuTpmlkuFms6kDi4+SKDxofsVap4NEdQ8/Ey1SdkO8SOl/8m4EeVUZ4xryxyiSWqapuNM2DnO6HMLmG3tPk0b1x+GC0NHW2ooL4o657VBHug+17Pn5qIbAdaLlRwahH7hiZozCR12TWUtkIf6j2Yj7OxKV4Z/zfrGU8VG4nGdq2vKMl9enwe+E5PYvIeaCk3tmIxz+JM6DHPvXL/ugv8WX2bbaY0Uj9AsMmIhY=
+sidebar_class_name: "delete api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"deleteConsent"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/{realm}/users/{id}/consents/{client}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Revoke consent and offline tokens for particular client from user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"client","description":"Client id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
