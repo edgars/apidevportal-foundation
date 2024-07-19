@@ -1,0 +1,159 @@
+---
+id: get-form-action-providers
+title: "getFormActionProviders"
+description: "Get form action providers Returns a stream of form action providers."
+sidebar_label: "getFormActionProviders"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVMFu2zAM/RVNpxZI427H3HLoiqIYVrTZKQgGRmZitbakSnTSwMi/j1ScNl7bnZZLJOpJ5Ht8dKcJ1klP5nraUoWOrAGy3qkf4GCNDUf0YqRLTCbaICd6oq+R1MrHRoHJ2BD9xpYYk7pHaqNLClSiiNAov/oYOdYj7QPGnOym5EfXSN8ZOc3AuyOOYRFT8C4hV9npb5eX8jes5+ctw4x3JNXyKYRQ9zyKxySQTidTYQOyol1AvuSXj2hI7+U30gEiNEiScTLvtJVnA1DFDzs+4B3TqRv9txQ5qgSizpwnZcsv57nm59ZGZF4UWxy9z87yWLfWnDnRrs4R2wRe7FltLqTyvSZ6dKhjoosuJ9sXMOhUIfpeHPS9CCe6JYybI5821vxCRRTSpCiecGdqD09jfAFJOja+KaBsrCtyipSrSGjaaGmXHwBjMKXf5J+Qac8Xp4AHIXdozxD2ylYS614F2S8RIkYtwlu38hlpKctw29emplKPur96mKnp3c074WeVTcqK044QFXGFEZ1BsZxijdQnj417u7Boknoozna7Hb8K5OO6KL1pZQ6y2tIxUfVQxNfxpQSCT9RAJtybhRunxM3qYGd16ucBj+7Nt/9rrHrNCV+oCDXYXHPm2PVWmuvJ0c1DL3HgYzdxtysmKVe7bgkJf8V6v5fwc4tRLMLLDUQLS+kiG6a0Sdbs4hXUCf9B++y+H5Zz9ck0fcioD4LbaUldt7LjJffudVr3CwZWCMwhF3U4m7JJA53ceve9GAzh9dWMnfoHhOTJ2g==
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getFormActionProviders"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/authentication/form-action-providers"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get form action providers Returns a stream of form action providers.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

@@ -1,0 +1,174 @@
+---
+id: post-client-push-revocation
+title: "postClientPushRevocation"
+description: "Push the client’s revocation policy to its admin URL If the client has an admin URL, push revocation policy to it."
+sidebar_label: "postClientPushRevocation"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVM1OGzEQfhXXJ5DSLO0xN1RVFaISKMAJocrxTliDd208s0C0Wqmv0dfrk3TGuwkJPz3QQ6VI8drf/H/fdJrMNerZpf7iHTSE+mqiS0CbXCQXGj3Tpy1WiipQNiN+//yFKsF9sEYAKgbv7EpRUI5QmbJ2jbqYf1dHyy0jVRl+a56eJyqK2zf8TPVEhwgpvxyVnEQMSEOGks58Y8bABBhDg8BVdPrzwYH87VZwcswwGxpic3k1MXKsbF/coEA6jbaC2siJVhHYKCxuwBIbxiSpkBsCYGstIM7hrgUk3DIwKZkV4x1BvX2PlFxzrft+opfGeSjfY8vG5MjL3TcfFsaPTuaArScBCCSaZGogSDLRTjspPhqq2HPDD/yVwPhaPx9xvlUCUXtNIOXKD/u5s3etS8D9p9TC5GWP1unxE61ycujqyId+8mp0V/6bV+Yml1eFNSNkOhJgposu19AXA9+w6FzZF8Kxj2mbLAjpft2eNnm2rIgizoriFlbWB3M7hUcj0aY21EXma5FdYw6PYNvkaJUdmEyFHxRugWu9vNoGnElVA2V2YZsyJbAey5fvBZgEKfPENcuQkePIj8fc1GHWz/zr2bk6PD16McfzyqHin9lAWGFLSNBYUMuQsiLfcDYdNWJs1shucx4eHqabBoV0XZTBtjU3eugrpyxdHZL4ND2QC5lPbXLB4/TlRg0iVnmp7Mh4p5LuSa7/a/+MUyJ4pCJ643KVuSvdSLpLPVvLaWQdn2aZ48+Jx8SohK9s03ULg3CRfN/LNas4CZv4eG+SMwsZOHOrdChnZvrSeIS/9GdvPgpqX72h41dLWW+eRvbOvfGtfPGRx7zZEyLjdyXyvqDcuv6KURWYkpUgbRgeDllBkbZMXmzwndVwenJ2zjr6A3EoXVg=
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postClientPushRevocation"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/clients/{id}/push-revocation"}
+>
+  
+</MethodEndpoint>
+
+
+
+Push the client’s revocation policy to its admin URL If the client has an admin URL, push revocation policy to it.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"successRequests"}
+                        required={false}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"array","items":{"type":"string"}}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"failedRequests"}
+                        required={false}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"array","items":{"type":"string"}}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"successRequests\": [\n    \"string\"\n  ],\n  \"failedRequests\": [\n    \"string\"\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

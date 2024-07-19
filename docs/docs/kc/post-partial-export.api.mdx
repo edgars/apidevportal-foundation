@@ -1,0 +1,129 @@
+---
+id: post-partial-export
+title: "postPartialExport"
+description: "Partial export of existing realm into a JSON file."
+sidebar_label: "postPartialExport"
+hide_title: true
+hide_table_of_contents: true
+api: eJydU11v2zAM/Cuanlqgi7M95q0YiqErsBRJ91QEg2LTtRBZUiW6rWH4v4+U7TTpF4YCAWJR5PF0PHYS1V2Ui1u5AmXqKM6LWlu5OZMFxDxoj9pZuZDXKqBWRsCTdwGFK+lLR9T2TgQuFNqiE0r8Wi9/i1IbmMkz6TwExQCXBUF4F3GEuUgolOFVUDUgBKbQSc2t7hsILd1ZuqHj0PGH0WAxUjjmFdRKLjqJreeEiIFoyJ6usDUcKV2o6fwR3s/gGh/PbbFyBj4F6xVWz6hJBPlStUEaThEn1qHQxZdTSgpw3+gAJAqGBv6rd9S1p49+w9XROxuJNRV8n8/577jt8kr2VEvCVm5SPolNjBcy6xKtPvPDML7CNI0I4WEaRRMM5VaIPi6ybAdtbpzazeBJMZFZ7upMsVWyBBYTswh5EzS2CUDlOcT4F90OiNPt5jBhzQ8eHnCctleAG09T4fMWVICQnqVt6VKmxiTN1chtsK5YXaxvxPn15ath3FQ6CvqpfQpZt4QANgdBsxVYgXgHjN2cO4sqR259LM7j4+NsL5ALd1nh8qYmuybv8xRZ1YHEt9mcAzyRWqUHjwbiiJi2bL8fRy/oEgXC/ew+jtoiPGHmjdKJW3pLN5rjVi4mJ79wB02vYhtRStdtVYQ/wfQ9h4f94pEXOqqtYV+XykQyNqnyxgY/KNMwj7RLH9a82tLn0g0fgubat3u/K93Jaly/U/HOfr6p0xhUtj3kMfEdVOs3h2t3vVzfkGP/Acmv1zE=
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postPartialExport"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/partial-export"}
+>
+  
+</MethodEndpoint>
+
+
+
+Partial export of existing realm into a JSON file.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"exportClients","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"exportGroupsAndRoles","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

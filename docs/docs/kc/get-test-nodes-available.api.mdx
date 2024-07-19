@@ -1,0 +1,174 @@
+---
+id: get-test-nodes-available
+title: "getTestNodesAvailable"
+description: "Test if registered cluster nodes are available Tests availability by sending 'ping' request to all cluster nodes."
+sidebar_label: "getTestNodesAvailable"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVMFOGzEQ/RXXF6gUsrTH3KIKIYTUViE9IVRNvJOswbs29mwgWu2/d8bZpEmBHuihEgpe+8145s177jTBKunJrf7iLDaU9N1Il5hMtIGsb/REzzGRsksVcWUTYcRSGdfKSjWeoQoiKliDdbBwqASedt/WWdqoxUYlbErbrNRJ4N8TzvXYSlryCpw7zjfWI+0DRpD7r0quYIUkWb/K6XR3EaMipuCbhFx/pz+fn8u/49q/XTPM+Ia4NTmFEJw1OXNxnwTS6WQqrEFWtAnIQX5xj4Y4MESpg+z2gtQagynNtqWngwCIETaMt4T14X6iyN3qvh/pJVeN5XtiOZgsOdm7dH4Bbkgyw9Q6EoBAAkSokTmUWXbaSvMBqOLMDR/wV0Rwtf5zuHlXCUSdNp7nXH74mJl9bC1PWk8otjh6ydGuPD6iTS4u2Trwoh+9erst/y0rq5Lbq/wgBxmO5J/oosst9IXZ6rfobNkXxASdZTWdwYFgEsb1jqI2Og6viEKaFMUDbozz8DDGZ5Abx8bXBZS1bYqcP+USEpo2sqJzAshy+En+Abnf27tDwI10tpXNMWzfqlysBwrke4Fso5i1Ypulz8hh7NdDbWoq9ajZxc1cTb9fvZjlvLJJ8R/sIeyzJRu2MaiWPiqqUL2RbDz4BEz2yTE5T09P4z1BPq6K0pu2ZrazkWRcwuq2iE/jc9kIPlENueFBATy1/DaobGN16OOjNrrffv0vT88wH8JnKoIDm/vLfHSD5m71ZGemQXS8mmSFv6o71kXFdEhg1y0g4Y/o+l62uZIoYuLlGqLNaJFWaZOsWexLcAn/wtDpbPDUR/WGlV/tZ/f4NPL0rMG18sVLnvL+qRAnv6uQ913K/PV3jKoQSjaC0LA9mLKBAh2EvHjEj16Hy4s5u+gXTc5bkg==
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getTestNodesAvailable"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/test-nodes-available"}
+>
+  
+</MethodEndpoint>
+
+
+
+Test if registered cluster nodes are available Tests availability by sending 'ping' request to all cluster nodes.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"successRequests"}
+                        required={false}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"array","items":{"type":"string"}}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"failedRequests"}
+                        required={false}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"array","items":{"type":"string"}}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"successRequests\": [\n    \"string\"\n  ],\n  \"failedRequests\": [\n    \"string\"\n  ]\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

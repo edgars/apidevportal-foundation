@@ -1,0 +1,110 @@
+---
+id: delete-federated-identity
+title: "deleteFederatedIdentity"
+description: "Remove a social login provider from user"
+sidebar_label: "deleteFederatedIdentity"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VFFr2zAQ/iuanlrw4m7syW9lyyBsjJGkT6EMRTrHIrbkSnLSYPzfd6c4brKkhWUMDJbl09133/edWh7EyvNswR88OM8fE67AS6froK3hGZ9CZTfABPNWalGy0q60YbWzG63AsdzZijV4lCfc1uAEHZsoPKighABfQdEmqIkCE3TYYZwDX1vjAcu2/OPdJ3qdFv1h2WdrAp7gXZfwWjhRYTJHQFuuKaQWocBcBn/glwNRVvxP7HGXUQi7MTYwrd7dxvpPjXaAIINrIOFeFlAJQhF2NWXzwWmz4ljZh10Zd3RV46JLLlbX6n9kPXB81tbsohL/CgKVR44L+6IdT/aIMp62kcouJaV92mrVpflB2fe6lzZtD2A6PIqRm4NijSsxSxFC7bM0XcNOllasR/AsqPZI2ioVqtImjWV8BONBNo4MQwmElOD9r2DXgAwsHo8DZtTj3kynYUPTVJj3ZND3EoRDXsla2uQ2RuoQ2fjWY2P3hIdNx7M5u/85OdNgXmjP8BFDCHOQgwMjgeXWsVAAeyXZCLNJtLeQgUqfkrPdbkcDQdatUmVlUyHBcbJIOGJ1D+LD6I42autDJWLDvXX2+rFh+NjR9J300UYgNGd/Nek9rwGeQ1qXQkdcsY+2t8yCZ4eZjJ7BdxYdem4b+jV4HXUtsB1K0LZL4eHBlV1H208NODIDLjfCabEkvdAaSntao21zUXp4o8GbaT8dt+yVm+FiX/2mMIR0I8qGvnCJKg03D43wVUCuK4pMXl3xjdvjCiSDcN1jd3SBfBl/H8/HOGG/ATbiLaw=
+sidebar_class_name: "delete api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"deleteFederatedIdentity"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/{realm}/users/{id}/federated-identity/{provider}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Remove a social login provider from user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"provider","description":"Social login provider id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

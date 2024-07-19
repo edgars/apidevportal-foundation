@@ -1,0 +1,110 @@
+---
+id: delete-user-group
+title: "deleteUserGroup"
+description: "deleteUserGroup"
+sidebar_label: "deleteUserGroup"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9U99r2zAQ/lc0PbUQ7G7syW9lCyNsjNGmTyEMRb7EIraknuSmxvh/353ipE3TvnRsYLB0uh/ffd9dL6PaBFks5F0ADHI5kc4DqmicnZWykCXUEIEfv6FrvZxIhOCdDUBRvfx09Zl/JQSNxnMUxfx04ouzEWyUwzB58Xie0CtUDdmQcfTSsJdXsaInSw90Q1B1I19mSlbBLuLCuihM+eEy4btvDQKBj9jCRAZdQaMYZew8ZwsRjd1IQhZiVyeLaTwdhsmr1U35L7JuuPvZX6YmuYi5yj0plfikOoXM+0TQkLesbN6bcshTUTqPxQfypseHA/Ut1hRYxehDkedb6HTt1DaDR8XlMu2aXJWNsXnKHFL9ALpFE7uUQGkNIfyObgvU8WL53OGW29pPzanbsU8uLMf++b4ChYBphoxdu+RpYiLg+4hNXDMecTO9nYvrX7OzGZlXJgj61NFFIKwBwWoQa4ciViDeSJZRNk1zrHTk0qfk7Ha77EiQw01eOt02NPJpdVgrZnUP4mN2xQbvQmxUanicgb1kgpdBHLbhBP+RmgiPMfe1Mil1gtKPQi9kcdiPpDT9izSye7H5epg1UqMiEBzT9ysV4A7rYWDzfQvIEtLxQaFRK2aZBC1N4DPN11rVAc7g6XHPC3lxM47xpXhjMV9tZTQq20kuXbd8oyNxe1x83qB3AXlfUSLvP1c86DMsh2cL/XX6Yzqf0vj/AVrO6Gk=
+sidebar_class_name: "delete api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"deleteUserGroup"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/{realm}/users/{id}/groups/{groupId}"}
+>
+  
+</MethodEndpoint>
+
+
+
+deleteUserGroup
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"groupId","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

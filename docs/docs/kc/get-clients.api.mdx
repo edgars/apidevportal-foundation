@@ -1,0 +1,208 @@
+---
+id: get-clients
+title: "getClients"
+description: "Get clients belonging to the realm."
+sidebar_label: "getClients"
+hide_title: true
+hide_table_of_contents: true
+api: eJytVUtP4zAQ/iten0CqGnaPvbErhBAHVsCeULVynUljcOzUdihRlP++M07SB32ILVSVWnse3zdPNzyIueeTJ/5LKzDB8+mIp+ClU2VQ1vAJv4bAZCdkM9DWzJWZs2BZyIE5ELoY8xG3JThBFjcp2swhDP5GvBROFBDAEU7DFTldVOBqlBmU4LHzj6bvwTOl0ZDNarah4mUOheCThoe6JHMfHHLiLYpCrekms67A8360TDkfdqAonCjBoHylwxcAFeJtLwze9yCeEukgVM58Ad7iC3x4EE7mO7SXOSBzh0VXnuFXsE6RRXNmHd6sqv6zvknZ4PezhF4VLMVMw53R9aH+GPoz5AKbVRhjA/YqI1NImTIsq7SmLhJpoU7KdClCvuYU236HTLxlpMLOiIFKv52jkoNFpRzgXARXwYewvSpK/NNOydqX1njwZPDj4oJ+tmHvbhFEWhMwBSQVZamVjMOYPHtSaXYx7ewZZOAtfUYcxzO3/eDGicVgJzxpYkRtIlez7MG9DoNcOY1KeQilnyTJC9RSW/EyhjdB5MfSFklMdxK9+BiNB1k5FeroQEgJ3v8N9gWQ5NN0U+GBCHdBb6utIiDgoZJ0nmE/guMUjjKZjZoqxHTe9tzYJfFh91cPj+zy981OAR9XzT2o4Gxm4MBI3A3WxZV3wNm4L4KQsQjbyVkul+NVgqybJ6mVVYE5jVWiylNWOxLfxxd0UVofChED7psOa8PWW3WLebOu/wf3dZ/EAG8hKbVQkUQk3fTlf+KToc3l+m3IkRbJmmYmPPxxum3puptZKmqqPE0rNlMmtIcjRPfu9r28MHXbj8Sr0BWpxfn8OOKeFX8Eb3gmPgF2aNEfQe3ejOOYnebidG6nb/MjzFcvx4mkTt3lRyi9ezvWxKZ0cIpk/9m1Z/f9Oj9nB/b9Xj79pTBbPAae3aC1U1TMQaS4xohUJ7vE9Vdu9uHOfqdoVhv8+uoRd+A/RDpbfw==
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getClients"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get clients belonging to the realm.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"clientId","description":"filter by clientId","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"first","description":"the first result","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"max","description":"the max results to return","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"q","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"search","description":"whether this is a search query or a getClientById query","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"viewableOnly","description":"filter clients that cannot be viewed in full by admin","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

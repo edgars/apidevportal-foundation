@@ -1,0 +1,193 @@
+---
+id: get-group-role-mappings-client-composite
+title: "getGroupRoleMappingsClientComposite"
+description: "Get effective client-level role mappings This recurses any composite roles"
+sidebar_label: "getGroupRoleMappingsClientComposite"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VNtu2zAM/RVNTy2Qxt0e/VYMRVEUw4a0eyqCQZHpWK1tqRKdNDD87yNlO02WBli7S2AgtsTLIXl4WolqGWR6Lz+XBmoUM1uC+KKcMzWdzycyg6C9cWhsLVN5BSggz0GjWYHQ0eeshBWUwrNnNXiKu8IE4UE3PkAQqt4IbStng0GIlkFOpHXgFQe+zij0EvDK28YxghFAD+rz6Ek+TnlVAYJn0K00DOqpAb+hu5pu6HPhDeQzcB4COccE8tc6TC5yVQaYEEZsfN1jEmuDhcACjBcK0ZtFgxFp0AVUSqatxI3jHIEu66Xs6Ao3JZ/k1lf0PUByCosXRB5UWR1giKeCTcRJbVGY7MMpGXl4aowHagn6Bn4rdzCVo5cj2U32L6L2s/+zyHP2Ds7WxBF2+HR+zn/7bfp6Q0m0rZHT0S1RozQ6jjV5CGzSHua0iwfiqOz4N5FEmMIOHIscokJSmbRxAl2yZNqFpDVZlzAPzkYWJ32RdNW/dIneoWIAvxp52PiSIhaILqRJ8ggbXVr1OIVnxZVOyS1RWWXqJKYMsfTA22FwEwMorSGEH2gfgSq6n+8a3HJ1fYf2zbblcuKRpnEFQHnwkms3dW6jpcHY+5sBm7hgPGJ2eXsnLr5dH7AzLjA9amtCq5KDh1qDILLzmogjwabDxJSOE9tvznq9nm4bZP0yyaxuqu2mEmTuag/i4/ScD6jlWKlY8MA+GqSIarEvWGJQsV3F2CurfWHS39WyYRAIz5i4UplYSCy8Hfh2L9NRB3rC0Uva7+Yu57h1Pev4frtlL8QjYhTUDw7YtgsV4Lsvu46Pex1kNmUmqEXJO9mr3PEmvFEIXy2TpnlUdleqbNgjMn6lvGFcb8R4Mhsk5lQc0cxXYQ2HNK9dHCPcfhYsbu8C8r6kNO7/nHEgUDcnywJURqrAze8vL0hNHO64HWgrT22rnleXdyQpPwHJjdNv
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getGroupRoleMappingsClientComposite"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/groups/{id}/role-mappings/clients/{client}/composite"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get effective client-level role mappings This recurses any composite roles
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"client","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"briefRepresentation","description":"if false, return roles with their attributes","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

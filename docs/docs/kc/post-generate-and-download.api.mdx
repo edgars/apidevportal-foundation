@@ -1,0 +1,254 @@
+---
+id: post-generate-and-download
+title: "postGenerateAndDownload"
+description: "Generate a new keypair and certificate, and get the private key file  Generates a keypair and certificate and serves the private key in a specified keystore format. Only generated public certificate is saved in Keycloak DB - the private key is not."
+sidebar_label: "postGenerateAndDownload"
+hide_title: true
+hide_table_of_contents: true
+api: eJzlVsFu2zgQ/RUuTy1gW9k9+uamxaLoIUGSPQXBYkyObTYSySWpuIKgf98ZSo6s2N4FWnQv64MhDYczwzfzHtXKBNsol4/yujRok1ilFMy6TiiuMSSzMQoSyqeZ1BhVMD4ZZ+VS/o4WA60IEBb34hkbDyYIsFqocd8sG7aYRNqh8MG88BZyFhtTohCHKJHCXAiR3yOGF3J6G8RY2hc9KvJFzaaYXECxcaGCtBA3tmwoe59DC1+vS6MmwU0UEV5ojUJ9wUaVDp7Fxw9ifporCuvSQs6k8xyPYPisCQjvYjocY2X1R7e3FESTX8C/aozpg9ONXLZv8KNk91zrtbMbsyVv5Wwi/NkTvC+5PPIsvkZ2b2VUO6yAn1LjkQK49VdUiTb6wAUlg5FXA0JZHXdu3LF2rkSwspvJDNMtxLh3QR+5ROq93bIHHfnf1lelgXh2MRdxeblvz5klWksmlXiKT9d1OW70zsb+pL9dXZ3CevPlMpROJUxzyoVQnYV0KGMsUK6NhdDk7JTeQ4AKEwbmSysNJ/SQdrTD0gK95YPLt1zJVsEu4h3NkDD6l/fDfJiAhG8KNc4u1pP71WRUoqk8PXSzs9mN/hlRgQThx+KSeBBsO3egCw8tp1jKos3YdIXK4hOL1mh6GceXLJy/Kw4snpMczPVIsqwMQ0PqUFLMXUo+LovieaDzAr8B17FQripAV8YWOWnMhUVUdTCpyQFAKYzxz+SekXB4fDp2uOfz9pM3dXsFgBPLAZjMN4SAIU81s/hulINPfUXn+TrAO2XoOJsTYk7MA+FG2zENzwz32DBjNy4fZCRfr4Qrhkvcfbp/EKvbzyeD/bAjVTQs3gcXEXCDAa3KIpxF9EKwxUBUUJmo097t9/vFa/9c2BbaqbqiCclM5pK56X0Rvy6u2MCDVUHuxzC4bHm9YQRpszgS58lB2lEy/s8X2zDHCb+lwpdgMtC5Me1A2Ee5PEjcwFh6WmbdOSYtGwfZOM9b4tWOhYACtu0aIv4Ryq5jM3EkMBnp8QWCgTUPJFFTm8jPNPMbKCP+QwPf3Q1K9V5cEN6z5xyMYBvJqcua33pivQo7K+R3FfJ9SQnX/zhjblr3RH47BE3ixdD3S9d9lvkDBxi3nnyrcMX9jhXJpE8XfCeX8eSGuL25f6BN6+GzqXI636ywZ0Wj/1yuy6fvv3jY1soS7LaGLfv2dfDvbxbcw48=
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postGenerateAndDownload"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/clients/{id}/certificates/{attr}/generate-and-download"}
+>
+  
+</MethodEndpoint>
+
+
+
+Generate a new keypair and certificate, and get the private key file  Generates a keypair and certificate and serves the private key in a specified keystore format. Only generated public certificate is saved in Keycloak DB - the private key is not.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"attr","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          KeyStoreConfig
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"realmCertificate"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"storePassword"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"keyPassword"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"keyAlias"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"realmAlias"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"format"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/octet-stream"}
+              value={"application/octet-stream"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

@@ -1,0 +1,309 @@
+---
+id: post-flows
+title: "postFlows"
+description: "Create a new authentication flow"
+sidebar_label: "postFlows"
+hide_title: true
+hide_table_of_contents: true
+api: eJyNVslu2zAQ/RWWpwRwLTe9+eYGKRCkRQI7PQVBMZbGNhNJZEnKCwz/e2eoxZItNw2MQJqNs7w31F56WDo5fpGTwq8w9yoGr3QufkIOS8xIIl8HMkEXW2VYI8fy1iJ4FCBy3Ajo+i1SvZEDqQ3aILhPyMFo57+TwpHG4p8Cnf+mk50c708id5Nglykai45kQUL+sc49Z0W+YExamUZvjgPspYtXmAE/+Z1BCqnnbxh7cjSWk/IKHWtV0rJx3qp8KQ8DCakC16vpJNqjp/BrlaC97w/stfmBa0xbyrnWKULO2nmhUn+f9yu7Hb7bYlzwQztNsBZ2VKPymLmPi29F1PZW5wu17O9G2+5jC55Xfwk8dGVLOPU3T2mr/K6lVDTmJVrKfaFtBr4Ufb1pTv3wUIbi5OI8C4d2hr4wk5TsMOmLwXNTPsUzZDZDuNsabf0JSA+XHXsgfQjmJDE003I+N6PROTceH0JCBixk6NEyawnHrDLgV9SonBT0RuxMM3lK2iAVbCKucu2FSj5dy2YyVL63BQ7O+XPsmPO7UJFTmaGHA+0FSmSla4YzzDiRsYz24bRD1IVutKh2ALV+XRdQWOKEXHlv3DiK3nEXpxreh7gFPmUY6yyCJFN5FEK6cKyj7pdwoQAQx+jcb6/fkep8eW0bzLiaCvMds6Y8PlhWZYfZI1hCHXeaV8r0uK3uyozq5VE3ptkZR0G38Y24vSGO0uNiKAfQrILy9TL5Xy7wuJVYl74XFCWBytM6PG1nXtNz1Ee+0rdFt6PnOcvY+PBK7VX5QodBVER5qEYvJjxuMb2bPYvJ0/1ZP59Xygn6QWMiLC7QYh6joF0hKD1xIdiwukAgDnuoi73NZjNs8KftMkp0XGRHng4kg7ZM4stwFPYWwT6DgKeKfCwR9V13cmc0V9f/3KAVPj1ufWRSUCGBkPC+otmLHNdU74aQ5TAc39wrJiaZ7vdzcPjLpocDiwnVlulDj2uwCuY8AkJUohw/05wWkDr8RwlX02pzXIsLq6W3gvrCyvm6WkNa8Bs9UuOb1RXgsUIgroSkSt1tefTnZ45w9D37COjspafH2TMZz6uvjUwnYUMCd5j/h7O1ae7TINvLFPJlQd8/pC9j8t9fP+k3yQ==
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postFlows"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/authentication/flows"}
+>
+  
+</MethodEndpoint>
+
+
+
+Create a new authentication flow
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          AuthenticationFlowRepresentation
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"alias"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"description"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"providerId"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"topLevel"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"builtIn"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  authenticationExecutions
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"authenticatorConfig"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"authenticator"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"authenticatorFlow"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"requirement"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"priority"}
+                required={false}
+                schemaName={"int32"}
+                qualifierMessage={undefined}
+                schema={{"type":"integer","format":"int32"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"autheticatorFlow"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"flowAlias"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"userSetupAllowed"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean"}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

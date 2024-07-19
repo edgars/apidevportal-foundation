@@ -1,0 +1,154 @@
+---
+id: post-execution
+title: "postExecution"
+description: "Add new authentication execution to a flow"
+sidebar_label: "postExecution"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVU1v2zAM/SuaTi2Qxd2OvmVFDkUxtGizUxAMjM3EWmxLk+SmgeH/PlJ27LhpBqwzgkQmKfLx8SO19LB1Ml7KWeUzLL1KwCtdiu9QwhYLksjVRKboEqsMa2QsZ2kqStwLGF/BV0yqcPJagNjkei8nUhu0QX+X0lWjnZ8f7Uhr8XeFzn/T6UHG9Zs4S+etKrcrskt06RkL2YAxeRcy+uXYsJYuybAAPvmDQbra3pQNPRzEGV06dGzw9ebmPNLDvWRDAxYK9GiZkVoqVhnwGQEoSUFvFiEv5FtCglSwibgqtRcq/XTdJacsUt7eVji5jJJU/pAHiSoMHZrJu9GZ0lmuwJ0hCFKhN4JSIJ6O5P8HAqo6UZHpY9XkpAUTy6gO+TbRuP4Rx3RR3YNsor4j3HAkPw7ty5HjyubkMvPeuDiKdnhIcg27Kb4Cw5gmuoggLVQZhZgu4HLkyip/CA4gSdC5n17vkIhYrk4Nnjndtuxjsz5/Diw7Xvh9jcSfDc3AvfU0tOe8RTRwNqEKbXTwpXxQ3HfoxYwRi6f580LMHu/OirXIlBP0gd5EWNwgFS5BsdFWEK3igrNpNwyQhGEY07ff76c9hdpuo1QnFc9wKBBXmXlvQXyZ3rCAS1tAoKRrMpaI0xkdga+HUfy3PdAR7vHVRyYHFeAE+HXXWEsZH8dr7JEEobfoNz4dgaG9Tl94X2XcsOSwrtfg8IfNm4bFVEzLXUPHF7AK1lw26qFUOT5Tq28gd/iXlK+euom6FheG/t08OyGUB8mh84rf6EjF6pcKz/yHgFyY/Q8AGchtVmScIaQ0DMxQq79tw39esJfh/tlGHi2Px4fnBRmvuxVf6DQsUgj7ib5DfG3aOpJBkNUyh3Jb0V8Q6Vuf/PwBITxOhA==
+sidebar_class_name: "post api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postExecution"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/authentication/flows/{flowAlias}/executions/execution"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add new authentication execution to a flow
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"flowAlias","description":"Alias of parent flow","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          [string]
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+        >
+          
+          
+          string
+          
+          
+        </div>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

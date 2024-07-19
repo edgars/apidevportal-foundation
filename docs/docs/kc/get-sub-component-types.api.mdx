@@ -1,0 +1,188 @@
+---
+id: get-sub-component-types
+title: "getSubComponentTypes"
+description: "List of subcomponent types that are available to configure for a particular parent component."
+sidebar_label: "getSubComponentTypes"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VFFr20AM/iu3e2qhi7s9+q2MMkoHG232VMJQzkp8re273slpg/F/n3R2nGZtYHQsBJLTSadPnz6p0wTrqPM7/cXV3jXYkF6c6QKjCdaTdY3O9TcbSbmViu3S7LwUbT1GRSWQgoAKNmArWFaoyCnjmpVdt2xeuaBAeQhkTVtBkL8SPb0z02faeQwgua4KzrZGum2XE5y55GEnDoQaCYOg7bQVYI8thi3fNXzDR4HEp2hKrEHn3WDIdaRgm7Xu+Yq2lVgYVs3n8RkPVO5fCQhVrf/kIFmVuKiTxpGyxYdTdgr42NqAjJtCi3+VO9ra858j2W3xb68uJDoydZFZ44DP5+fyc1jM92tOwk0iaTffgveVNakF2X0Ul+51Tre8R0O6l8+Z5laUbmxX6g4XkeusSzz12dTfmHW26DOWzsfJ9pHGnkYMm11D21DxAyWRj3mWPeDWVA4eZvgMUtiMgzMoattkKUNMlUY0bbC0TQ+AMRjjL3IPyAXcLV463EoxAyGHblN1kninHTkvkYUatJRqm5VLnpYS1dcjNnUheNTN5e1cXfy4eiWZeWmj4i9MLirgCln/ZhgMKlEdeWw2NghMatAhOU9PT7OJIBfWWeFMWzOxqYOiCmF1APFpdi4G7yLVkAoehcZ9Uzxnaho0tZu0gyq6vU7++x4YW0H4TJmvwKZSUundKLA7ne/Gc68wPuRpbN4SGYug5NoltOuWEPFnqPpezMPyEOUUNgpiVvMKqsjzxuTu18kGqlZgJcVtIFjxfTvuKHMnN+NEn6oji+TN2kcjNNuXOHb4BiZkj7wLyPuSMtH9gr1KhILnQ2gYLi54rjy9CHm1VIS/aW18vZzzcP0G4dM68w==
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getSubComponentTypes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/components/{id}/sub-component-types"}
+>
+  
+</MethodEndpoint>
+
+
+
+List of subcomponent types that are available to configure for a particular parent component.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"type","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

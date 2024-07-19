@@ -1,0 +1,134 @@
+---
+id: put-send-verify-email
+title: "putSendVerifyEmail"
+description: "Send an email-verification email to the user An email contains a link the user can click to verify their email address."
+sidebar_label: "putSendVerifyEmail"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVMlu2zAQ/RWWpwRILLdH3YwihyCHBl56MQyDpsYWYYlUSMqOIOjfO0PJ8R7E7aEnibO9N2vNvVg5Hk/5xIF1fPbAE3DSqsIro3nMR6ATJjSDXKjscQNWLZUUpGxFzBvmU2AlurPBTiiN9kJpxwTLlF7vLSSGkpmSa/IL0SpSKts5iiSx4FyPP3BTgA1AzwnyKEpPVH4HlyeyRZNCWJGDJ+LxtOaKCL+VYCvUadTgE8FA+7lK+GlmP4OGBY2TKeLzuOa+KsjNeav0ijeo8lVGkqWxOb4vo1hIlAXp56VVZ0DDTsla5c1YhfDpIZTI8jOMIGVkwu60oay+3aORhbcSsbGA3pbwJWyn8gJ/rqCHav1D1Bl5u8JoB44cfvT79DlO5tcLb9AXO5uarveh2Ugk5lEdcm0imicX1SppIoeT0c5m9QjdbKB2sxuM0mbomXpfuDiK1lDJzIh1D94FsepJk0ciyZWOQmgXaDqQ2C9fhQBCSpzKuTdrQILT2aHBiLJvszk2+ygHAe8aT+8FCAs25Kj00gRL5UOdXjpubEB82PBpNGaD1+ezfo9T5Zii/dqZMAtLsKAlMByfsHFXgtFyhQWVnqCPi7PdbnsfBTJ2FSVGljkuSlhFailVtSXxvdcnQWGcz0VIuJsSbBgLh6NdV7bb16Mc6kACI//XK9O1yMO7j4oMo1FGoSR1N3FTHu92LowcfuP2aJxNHU5FisUgn7peCAcTmzUNidt7QaOUKCcWGS3PUmQOPinK4YG6SBP7dHLhNiIryS6s79eRTi7UJ2Anh26PN6OHVQR4Y5p3w+6c3LMrV+win04odHXIY8+TOnZbFQ6I/B0otqCZHR6u18kYt/wPOX6FWA==
+sidebar_class_name: "put api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"putSendVerifyEmail"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/{realm}/users/{id}/send-verify-email"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send an email-verification email to the user An email contains a link the user can click to verify their email address.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"client_id","description":"Client id","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"redirect_uri","description":"Redirect uri","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

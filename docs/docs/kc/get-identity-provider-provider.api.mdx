@@ -1,0 +1,105 @@
+---
+id: get-identity-provider-provider
+title: "getIdentityProviderProvider"
+description: "Get identity providers"
+sidebar_label: "getIdentityProviderProvider"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1vozAQ/Sten1qJDdk9cuuhqqIetmqzpyiqXDMJVsCm9pA0Qvz3nXEAkabtoSsh4Y9h3pv3Zmglqm2Q2UoucrBo8CgevNubHHyQ60TmELQ3NRpnZSbvAIUZ4uoxLpGuBq84aJFT2BZwyDYkG94U6yHUzgYg1Fb+ns/5dQ7z5152XSJr5VUFyAjZqpWGr2qFBeWwdEE7D6qs5HuW8VRwiLiyjhn/uI64r43xQATRN5DIoAuoFKPjseZsAb2xW0nIAY9lPDFVTYsu+RB9EODZ5BcchnpFvPsPaPKANChcr6tMTiQymbaxzi4dDPk58ElHZ9J2wrGjbwP4/aBn40tKUyDWIUvTHRx16dRuBm+KkWfaVanKK2PTiBMilQC68YQVEyitIYRndDugklfracATV3iy+DxsLJmBZS8F719AeeoPNt7YjYuRBqMW9z03ccN8xOPt01LcPCwuRF8WJgh61BgiPGzAg9UgNs4LLEB8kmxG2bSzqDQy9Lk4h8NhNgrk/DbNnW4qkj32PNvGqp5I/JrN+aB2ASsVC+7bhdwTF0MmJoNxVkwb2VD0V2PXS4nwhmldKhOpROpt3yYrmQ1DctEn3EuTZNm0n8nKgirgBG37ogL89WXX8fFrA579p+VeeaNe2CLqhtwEXlOfblQZ4Ityrh77cbgWn4zqh3X1h8oeJUOXDe9oScaMvwKe1G8ROZ/Xb+BPxevW3WRq726X1NX/AMn93Xk=
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getIdentityProviderProvider"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/identity-provider/providers/{provider_id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get identity providers
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"provider_id","description":"Provider id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

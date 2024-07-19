@@ -1,0 +1,105 @@
+---
+id: get-executions
+title: "getExecutions"
+description: "Get authentication executions for a flow"
+sidebar_label: "getExecutions"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVN9r20AM/ldu99SCibM9+i0PWSllbLTZUwhDOSvxEdvn3slNgvH/PuniZnF/DNZBwLKk6Pv0SXKnCbZBZ0s9a6nAmqwBsq5W36CGLVbs0atE5xiMt41EdKZvkBSM0/GAphUrqI3zCtSmdHudaNegjxm3Of9xizQ/J3LUY2jYQibQ6S/TqTzGUN/vdN8nugEPFRJ6odppK6EGqOAaNQf4zSOUlX7JNHqVpKir2pGy+afriPvYWo9MiXyLiQ6mwAoEnY6NVAvkbb3VjBzoWEaPrRo2+uRNdOl2VloIrxh85YiCIfQfuDwEFqBwg4w6OTHIdNrFJvt0PJFUKIW0OzPrU7yUPqB/epaz9SUXKoiakKXpDo+mdLCb4AEEe2JclUJe2TqNSCGSCVzLWzrGAmAMhvCL3A655+XqMuFBejxNeJx2blqA9SCGvK8RPPo4d1tvXMy0FNW4G7ipmfBR9/OHhZr9uH2l+qKwQfEPzinK4wY91gbjgrJU6p1iE65mXE1gSKDH4uz3+8lZIOe3ae5MK1cSRZfBiaonEp8nU3E0LlAFseFhW3h+anQHI/JdRJfD+6dLG8QkPFDalGAjmUi+G1ZlqbPnKxnXZEfcFn5ml5t8sTA80IL7kCJdt4aAP33Z9+J+bNHLFrD5BN7CWgbFO5HbIDbv6wbKgH9p8up+OItr9c69vtnb4IT6qAW6bOWNTR7P+Xsg5/ohIqOz/QD8Hxn7VX9xujfzBS/2bwLP4H0=
+sidebar_class_name: "get api-method"
+info_path: kc/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getExecutions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/authentication/flows/{flowAlias}/executions"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get authentication executions for a flow
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"flowAlias","description":"Flow alias","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
