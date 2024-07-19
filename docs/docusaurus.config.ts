@@ -67,7 +67,7 @@ const config: Config = {
       title: 'QriarLabs API Devportal',
       logo: {
         alt: 'QriarLabs DevPortal',
-        src: '../img/just_q_blue.png',
+        src: 'img/just_q_blue.png',
       },
       items: [
         {
