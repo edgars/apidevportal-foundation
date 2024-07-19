@@ -1,0 +1,154 @@
+---
+id: post-copy
+title: "postCopy"
+description: "Copy existing authentication flow under a new name The new name is given as 'newName' attribute of the passed JSON object"
+sidebar_label: "postCopy"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVcFu2zAM/RVNl7ZAFnc7+pYVPXTF2qLJTkEwMDZjq7UlT5KTBob/faTsJHXTFlh3WBAkMkWJj++RdCM9ZE7GczmpfY7aqwS8Mlr8AA0ZlmSRi5FM0SVWVbwjY3lhqq3AJ+W80pmA4cFVYTai1ilaAULjRmgoUcxyPDwoJzK1Ri3AiROy3pDxRID3Vi1rj8KsBF0pKnAOU/F9ensjzPIBEy9H0lRoQ6CrlJBUxnlGQxsWf9fo/DeTbmXcvEA8d3S3zhbklxjtOSvygaoqetjRg2PHRrokxxJ45bcV0tHupGzpw0FcZbRDxw5fz8+PI91eS3aswFJSHi1z20jFWxX4nAAwBfRkEYpSvqQ2WDuWTrXxQqWfzvrklEVK2dsaR2+jpC2/LYJFlRUt2tGr0VmlSaHAHSEIsXsF3tP431BRTRE9udmJKEcdwFhGTeCgjYYxI47pomYPvI2STniHdr3jubYFXZF7X7k4ih5xmxQGHsf4BBx2nJgygrRUOgoxXMDhMKmt8ttwASQJOvfLm0ckMuaL5w5TTq+Tfui2z5cDy54Hfl4iWLShILi+7g8letkhOnA0IpVWJtylfNi47tGLCSMW95fTmZjcXR0JNsupn+gLexdhcYUWdYJiZWxQ8o3Lxn1DQBIaYkjfZrMZ7yk0NotSk9Q8EYIgrCrz3oH4Mj5nA0tZQqCkLzS2iL5FB7ibQyf+14HSS+fxyUdVASokFoho+pKcy3jXrENoZAhVSf/x84YKhUmFk3Nh0/GmWYLDn7ZoWzZTEViuNlquwSpYstxUe6lyvKaWWEHh8B2+Tu/7zjsTbwyMV7PqjaBZjDUUNT/RkkTeDySeFx8C8hdz4wPgDvS2C3LOEageAmvd/kUH6fOMbzmcP5rwg8FzdzudkfOyf2WUJg2DGcJso98Q34S0Q9cHWyML0FlNL0fa7+7kzx+lDISB
+sidebar_class_name: "post api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postCopy"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/authentication/flows/{flowAlias}/copy"}
+>
+  
+</MethodEndpoint>
+
+
+
+Copy existing authentication flow under a new name The new name is given as 'newName' attribute of the passed JSON object
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"flowAlias","description":"name of the existing authentication flow","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          [string]
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":".5rem","marginBottom":".5rem"}}
+        >
+          
+          
+          string
+          
+          
+        </div>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

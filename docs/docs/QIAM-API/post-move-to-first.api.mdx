@@ -1,0 +1,110 @@
+---
+id: post-move-to-first
+title: "postMoveToFirst"
+description: "Move a credential to a first position in the credentials list of the user"
+sidebar_label: "postMoveToFirst"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VMFu2zAM/RVNpxYIonZH34phA4JhWNGkpyAYVJuOhdiSK9FJA8P/PlJxMrtLdsg2IEAsmn58fI9UK1Gvg0yW8jmAD3I1kRmE1JsajbMykd/cFoQWqYcMLBpdCnR0zo0PKGoXDOcJYwUWMMgKojSU4PIYbwhbTqSrwWvOn2WETB8joy/cFwaj9x5C7WwA4tPKj3f3/Ddm88mDRshk101krb2uAJl1smyl4fe1xoKALL2gEyWXlXzfUYwKThE31qEw2YfbWPy1McRfJugbmMiQFlBppoD7mtECemPXkioH3JcxYqqaHrrJ2eom+x+ovySeZb+1thh5wE5VJPDf0aCJIJULd7RMTg6MEqnaKGWn2N6gWpN1ajABqh1y7VQ18po+2R6ta3xJcAViHRKlNrBPS6c3U3jTTGGaukrprDJWxXohcgqQNt7gPgLoNIUQfqDbAMmwXA0T5tzqYaTGaafeubDsNeHzC2hP88ozZmzuYqbBKMrXnpt4YD7i6fN8IR4eZ2eMMEHQT59ShIccPNgURO583IoLYFNCS51FnSKXHouz2+2mJ4GcX6vMpU1FIse9Yv9Y1QOJ++kdB9i0SseG+xniiIiLvXDiaMiogTYyINh/fAP0iiO8oapLbSLj2GHbT9VSJse1jWNF/0ncpAEyx97twXC4yPyCB5Ww2vZFB3j2Zddx+LUBzxNDj1vtjX5hU2l+MhP4mUY8J3j4gxg3T/0m3YoL98jZFvugtnvJpcuGT/RIVp7uKV74q4hcV5REvbrixXvmCh4jI7tVN7huHr/PF7SGPwEw9kUi
+sidebar_class_name: "post api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postMoveToFirst"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/users/{id}/credentials/{credentialId}/moveToFirst"}
+>
+  
+</MethodEndpoint>
+
+
+
+Move a credential to a first position in the credentials list of the user
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"credentialId","description":"The credential to move","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Created
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

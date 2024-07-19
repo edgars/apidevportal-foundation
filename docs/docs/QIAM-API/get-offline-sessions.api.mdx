@@ -1,0 +1,193 @@
+---
+id: get-offline-sessions
+title: "getOfflineSessions"
+description: "Get offline sessions for client Returns a list of offline user sessions associated with this client"
+sidebar_label: "getOfflineSessions"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VN9P20AM/ldu9wQSa8oe+4YmhBCaQMCeUDW5F6c5SHLhfKHtov7vsy/pr7UgYNL60tyd7e+z/dmtDjAlPXrQ3wuLVSA9PtEpkvG2DtZVeqQvMCiXZYWtUBES8S2pzHllooe6xdB4vgJVWBLTtXVD6DcuQOSMhYCpmtmQq5Bb6mPoE+1q9CCIlyljTjFcd0Huenc2qcFDiQG98G21FXLPDfoFv1X8wsfMepJouxncwNRWU6FFKK9kcixBj1odFrW4UfBsoJf8FBZFDOR8yefDKCXM9zB+wNyWTak8UlMEUmR/ozpKMYN4DE6dDofHnwGvIeQbbI9QlHvo8VaJiTqqXFA2/SJYHp8b65ErGnyD78ImW9b88Qq6Tf8t6li8qeZ+IonDt+FQ/naTub5iEOOqIMrgV6jrwpoojuSRxKTdx3STRzRBL+V3olkmueuFFJXDSYx00sY6LZNOdZS0Nl0mvVq/0kZprNuXlcwaX7BrHkJNoyR5woUpHDwNcA6S0sC4MoG0tFUSY1PMkdA03oZFDADGcORfwT0hU38YbxvcSRpdKXbN1nkJ8Eo1cp4gePRakrRV5qKlDbHIVz03dSZ81O353b06u7ncE8u9DJ6VgV2ZsGoz9FgZjIMdclSvBBv0rQETW7NbnNlsNlgXyPlpkjrTlFzp2DvRg1S1I3E6GMpF7SiUEBPuJcYdU/3sq63h30mh3cjjP62nvhsB5yGpC7Axm5h926vrQY9Ws9nLi79GcWD2FMYKyDlxcWrbCRD+9MVyKdfdphHZpJZgUsiUZVAQvlGBv9fbQa7cl639+AJFIzZxzt+P9O4l9waFbnluCIzl4K0w+GDeR7f9IjpWr+y/gzT6S6gW2zxW9LoefqwsW0Q+B8oqWY7ZKkdIebilDN3DGS+Ferthe7tQ6rfedhfn97wZ/gDI5a4g
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getOfflineSessions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/offline-sessions"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get offline sessions for client Returns a list of offline user sessions associated with this client
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"first","description":"Paging offset","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"max","description":"Maximum results size (defaults to 100)","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

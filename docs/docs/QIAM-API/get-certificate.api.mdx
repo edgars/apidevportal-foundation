@@ -1,0 +1,197 @@
+---
+id: get-certificate
+title: "getCertificate"
+description: "Get key info"
+sidebar_label: "getCertificate"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zAM/SuaTi0QxN2OuQVFURQ9bGi7UxEMjMzEamxLleikgeH/PlJxG6dJd+iwAQEi8fORfJRbTbCMevKoL0uLNakpUbDzhlBdYiC7sAYI9Wykc4wmWE/W1Xqir5HUCrfK1gunR9p5DCCqm5yVS6Sh80gHjN7VETlRq79dXMjfYbzvt2xmXE2MQbTgfSnerM2eopi0OpoCK5ATbT2yk5s/oSF29EEAkN0l8MGuOe8tbge2kcuql7pj42bOoT/SmgHwU/qVzU/IWUGWShENKr9Dz5VzRakOturE0EOACgmDtL3VVsr3QAXXUbOCbwGhrPT7liepEhN1VjtSNv9ynnr73NiAjIpCg6PjLu2xR9omiNFWng/d6GR2LvAfRAXm1d/FZQ5y2wrXM0zGLhkmOmtTa7rMJArHrLU5X/ZzYImk79glYli/dr4JJXsXRD5OsozZbEoHqzG+gCQcG1dlkFe2zlL4mBBENE2wtE0BwBiM8Re5FXLBj7Ohwb0UtuPjodlbpZJY9x2Q+xwhYEhcSlsllj2nbntsaip41N3V/YOa/rg5oshDYaPiH7yZqIALDFgbVAsXFBWoPgg27hcQTFrAw+ZsNpvxW4NcWGa5M021Z/ZIS1d3IL6OL9KauUgVpIJ7CvDQ1OG7cIC+3e//++el7xjhC2W+BJsyJoRtT4JHPXndmp4FfJokKg+JIMLERJ5UwQDFsW3nEPFnKLtOxM8NBhkvH9cQLMxlAjzs3EY5M/sWUEb8A/izu57k5+qDnT1ZTy+EeqslddnIjY8rean6N0GW61NAPpeU+/efM6bhdDO2KxByXgdp/U415TXyNHA6+kYcPBHXVw+8S78BwmBWnA==
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getCertificate"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/certificates/{attr}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get key info
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"attr","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"privateKey"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"publicKey"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"certificate"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"kid"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"privateKey\": \"string\",\n  \"publicKey\": \"string\",\n  \"certificate\": \"string\",\n  \"kid\": \"string\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

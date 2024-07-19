@@ -1,0 +1,338 @@
+---
+id: post-client-template-scope-mappings-realm
+title: "postClientTemplateScopeMappingsRealm"
+description: "Add a set of realm-level roles to the client’s scope"
+sidebar_label: "postClientTemplateScopeMappingsRealm"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVs1O20AQfpXtnkAKMfToG404oKoqCukJoWpiT+IF2+vuroHIstTX6Ov1STqz/omdmKLSKIrs2fmf75tNJR1srQzv5G2kCxRfoChUTpL7mYzRRkYVTulchvIyjgUIi07ojTAIaXaW4hOmwugUrXBauARFlCrM3e+fv6yw7FDOJP0aYCfXMbkptHULr7TCrEjBoQ/cxV2yYzIy+KNE6z7peCfD6iCVJUVcYmHQkhvvmiwinTt6ZW3ylarIHwQPlk0qaaMEM+Ant6O0QqnXDxg5MiwMZ+gUWj5V8UDHOkNJyXomc8hw8mCU2cS578INGMiWVJIyOPS/1lQJ5KwX6Yxaoxy+cWzfLsEPZ6AGxsCOtMg6s5NJlrmidl83586UyBH9kKaiQRwrrhfSm1HcUbiaXAzm8B9+yJFTLmXRYt+FPkMGw2s9I3SoHM319EzB0eO6fKWn/57dBCxrr0CSQue2sf94fnGM6AXNzBE0WLtgsKBDw7QkQPJ5AS6RHQrbAR8S1EsFq4iTXDuh4g+nLZMa2PFgZ8dEGGDV7XwhVhEzkSST0Ykh/+WVNguVl+huGzB+OUAog8rXUAfNZM9cuyFsUKm4DjyVzrJ2UwRdFyyap65ZpUnJT+JcYcMgeMRdlGp4nOMLcOw5sSiAOFN5Y2x9Mhaj0ii38w4gitDa704/IlV+dz9UuOUamyGO1fqiObBsm+HBiGDQ+KnyHlrul9pVk1G3cbp29U3u38cz7sVTa6WZxGCRHAiGy+Guc3U/YPoRZesDlnUOB7zapzSiE1uqfKN9c1p+fG7HIS55BGJ5dbsSlzfXR0WuEmUFfaFXoftmgwbzCMVGG3/RvOJs3t4EEPnVNcbD8/PzvMeENtsg1lGZ7ck6kwykJomL+TkLGKAZ+Bm3k2GJaG4w0V1hYnx5iuUUQav9FfX+y7QFmsMXF1Bo5bP2VVYti+5k2DHjkEYkCj17x0zydGYLwkLChCQfVbUGi99MWtcsJtwaJgg9PoFRsOaBEl1iZfmZcLCB1OJfKj7pcHoqXllUk6V12zbnC+wJ0pLf6JHG2C9C3lPvSuR9QamD9T1pJQgxkZvb0Bwsmhhnq50fVWd49G9ktAFvvt6uSHnd/tHJdOw3PDzzVOjXB9a+joa/LKtkCvm2hC3rNj758wfNPGfI
+sidebar_class_name: "post api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"postClientTemplateScopeMappingsRealm"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/{realm}/client-templates/{id}/scope-mappings/realm"}
+>
+  
+</MethodEndpoint>
+
+
+
+Add a set of realm-level roles to the client’s scope
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          RoleRepresentation
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"description"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"scopeParamRequired"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"composite"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  composites
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                collapsible={false}
+                name={"realm"}
+                required={false}
+                schemaName={"string[]"}
+                qualifierMessage={undefined}
+                schema={{"type":"array","items":{"type":"string"},"uniqueItems":true}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        client
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    
+                  </div>
+                </details>
+              </SchemaItem><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        application
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    
+                  </div>
+                </details>
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"clientRole"}
+          required={false}
+          schemaName={"boolean"}
+          qualifierMessage={undefined}
+          schema={{"type":"boolean"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"containerId"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  attributes
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"201"}
+        value={"201"}
+      >
+        <div>
+          
+          
+          Created
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

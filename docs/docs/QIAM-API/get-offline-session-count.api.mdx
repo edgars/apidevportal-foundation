@@ -1,0 +1,166 @@
+---
+id: get-offline-session-count
+title: "getOfflineSessionCount"
+description: "Get application offline session count Returns a number of offline user sessions associated with this client { \"count\": number }"
+sidebar_label: "getOfflineSessionCount"
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVE1PGzEQ/SuuTyCFLK2qHnJDCCHEAQT0BKiaeCdZw6692LOEaLX/vTNeJyUFemgvzSXj2ef5ePPGvSZYRj271ce1RUdR3090idEE25L1Ts/0KZKCtq2tAfEov1jU1qGKGKOcje8cqSukLrioQLmumWNg2BbZRT5nOCNi9MYCYalWlipFlY3KpOyqV3d3dzpFFGO2CTboifYthlTBWclVLZEuxvDXY+BjucSwgLHlNMhN9frL4aH87TZ0cc4w4x1xRvn6qrniIQqk19FU2IBYtG6RL/n5AxqJD2VpBQr1ZZCSyI6pMs5y2CUGBi58aIBG17eveki/iW4hQIOEQVjv+SMjWqCKbzj+wKeAUDf69zEkrxKI2nOelC0/7ad2nzobkCmh0OHkbeGRgnVLzZkjrevksU3LxjB5N7st/y0q64fbq3wekp6M8We66FMLQzHOOha9LYcia+Qgy+PA5DGyZJ43HHWh5vsVURtnRfGIa1N7eJziC0jKqfFNAWVjXZESxFRDRNMFS+sUAIzh8D/IPyI3fHv/GnAtrY0j3IVte5XEOnMg5zlC4AnLMK1b+IS0lEg4z7WpI6lHXZ1c36ijy7M3w7wRzVvZlg1EBVxgQGdQsXB4KVB9EGya1QsmqXeXnNVqNd0S5MOyKL3pGqY7yVvmJayORXyeHoqj9ZEaSA1nCfDYVF4ulbdLbdZrp4/+1xr9N89EHhrhCxVtDTY1nUjqsxJv9WyzYlmKbM2S7t9XI6ulYpLkZt/PIeL3UA+DuJ86DCIxNp8hWJiLClhwpY1i8w4soI74B9r2rvKq7asPNvzdhrIT3FpL6rqTE5s8++0LIgv+V4X8XVImcLhnVIVQ8noIDeOHI16rll5defPg7jwapyc3vFs/ASxIRpI=
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getOfflineSessionCount"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/offline-session-count"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get application offline session count Returns a number of offline user sessions associated with this client \{ \"count\": number \}
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        name={"property name*"}
+                        required={false}
+                        schemaName={"int64"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","format":"int64"}}
+                        collapsible={false}
+                        discriminator={false}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

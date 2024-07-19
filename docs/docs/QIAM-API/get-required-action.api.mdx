@@ -1,0 +1,250 @@
+---
+id: get-required-action
+title: "getRequiredAction"
+description: "Get required action for alias"
+sidebar_label: "getRequiredAction"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVd9P2zAQ/lc8P4HUNYy95a0PCCE0DQF7Qmi6JpfEkMTGdoAqyv++O8dpGyhM2qRKde+H77vvvnN76aF0Mr2Tq85X2HqVgVe6FT+ghRIbssj7hczRZVYZ9shUnqMXFp86ZTEXkIX4QlsBtQInF1IbtOGWi5yiS/TXMXgVYinCojO6dUiVe3l6csJf8xo/Lyks061nBOQFY+qILXlwHNJLl1XYAJ/8xiAl6fUDZp4SjWUMXo0FRly7MOetaks5LGQLDR500AXPKkfLHRxwYwvrGvd9a61rhJadORbQ1T42ezDEWKWt8ps9r6JWS7QEnqhswI+m76ccTjwUqjzUKOS54jJQX81afoN4oEu88jXb5sO4io1eo6GhENmBYs7gHAOWGPJoWSI9AaJ8A76SE3U0Sagb+VYhwSo4RBy12guVfzkOYx9Ly9TbDhfvB7hj2PlNQOtUY+gwLA5WnxQ3r75iq9DFW5H+HwJaA6Ki0lHTrDLGksqkD+0OCcxWKJlqfR2ru6QPcAfKdGifJ1I7W9MllffGpUnyiJus1vC4xFfgustMNwnkjeL7qIoLQBxm3agfugCyDJ377fUjUvd39/sBN9xf3IJZ2LZhLiwjEUGlCJZkyNNXbaFDZFTOZcQmVoxHXJ/d3IrV1cU7/m8r5QR9YBtCkyjQYptheCiIJvHBZcu49sQZl56T8/LystwSpG2Z5Drrmp1oF5JZHUF8W56ETdPONxAajpqh2YlpB8T2RZp10O9enr8+dpFGj68+MTWoACPA7qNA7mQ6bclcIXt6nDRCpnS8mYZYEXZO7/s1OPxl62Fg81OHlidPx2ewil+ioINcufgqFVA7/KSno6n/Y/HBph7sKhqh3UguXXf8i440ku1LwIv6T0A+Wdp/ADNyONxTYIVA71tgaPStaBGM38t6998y2/Xzs1vahj8SBHfQ
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getRequiredAction"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/authentication/required-actions/{alias}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get required action for alias
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"alias","description":"Alias of required action","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"alias"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"name"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"providerId"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"enabled"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"defaultAction"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"priority"}
+                        required={false}
+                        schemaName={"int32"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","format":"int32"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={true}
+                        className={"schemaItem"}
+                      >
+                        <details
+                          style={{}}
+                          className={"openapi-markdown__details"}
+                        >
+                          <summary
+                            style={{}}
+                          >
+                            <span
+                              className={"openapi-schema__container"}
+                            >
+                              <strong
+                                className={"openapi-schema__property"}
+                              >
+                                config
+                              </strong><span
+                                className={"openapi-schema__name"}
+                              >
+                                 object
+                              </span>
+                            </span>
+                          </summary><div
+                            style={{"marginLeft":"1rem"}}
+                          >
+                            <SchemaItem
+                              name={"property name*"}
+                              required={false}
+                              schemaName={"string"}
+                              qualifierMessage={undefined}
+                              schema={{"type":"string"}}
+                              collapsible={false}
+                              discriminator={false}
+                            >
+                              
+                            </SchemaItem>
+                          </div>
+                        </details>
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"alias\": \"string\",\n  \"name\": \"string\",\n  \"providerId\": \"string\",\n  \"enabled\": true,\n  \"defaultAction\": true,\n  \"priority\": 0,\n  \"config\": {}\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

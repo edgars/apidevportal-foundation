@@ -1,0 +1,164 @@
+---
+id: get-default-client-scopes
+title: "getDefaultClientScopes"
+description: "Get default client scopes.  Only name and ids are returned."
+sidebar_label: "getDefaultClientScopes"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVMFO3DAQ/RXXJ5CWhPaYG2oRQhyogJ4QqrzO7MaQ2MYzAVZR/r0zTtiyBXqA1Uo7ccYz8968t4Mms0ZdXevvrQNPqG8Wuga0yUVywetKnwCpGlamb0nZnKTQhghYKHXu243ypgNlfK1cjcokUAmoTx7qQi80JyYjlU5rrrUG+jGVmtpd5kKclgBj8MhxNehvh4fyszvG+Rmn2eCJr8lbE2PrbC5d3qKkDBptA52RiDYR+FJY3oIlPcpnoaNJPCpBEsCDdlI2Gmq4sGDgpwSm7fS/DOTTCeaeD8Q4v+znme97l4BxUeph8bo7UnJ+rbkz0qbNJ66LHIyLN7u7+nNVeXUMrwkz03ox1a90OWQIYzntD8vB1WM5L/VgOjzA510gpIdnjvrU8v2GKGJVlnewsW0wdwU8GWlZ2NCVpu6cL3MDzDMg2D452uQCxlpA/E3hDhjw9c3LhEuBNq18N22LVRrrmQN5XgLrK2lZpvOrkDMdZRLO5tnUkcyjLo4vr9TRz9NXy7xqHCr+mm0K63UFCbwFtQpJUQPqnWLFLEFjswR3yXl8fCy2BIW0Lutg+46ZzRqVfQmr0xBfi0M5iAGpMxnwLAFem5odoiaLqK1HdnAMf73wSYfOVBM8URlb4/KoGdow6+daV8/GmAXEUZXV+raGeMcNQ5Obw7A0CL9SO45yfN9DEmFw+GCSM0vZHcukdigxK3dlWoT/gN27mA2yr97x5ZuA5kPjN1pat708ccgb2/pebPmhQT7WlAkcbzirAVOzqIWG6cURmyHSiyuv/ut2rH5yfMWO+APPO/jl
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getDefaultClientScopes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/default-client-scopes"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get default client scopes.  Only name and ids are returned.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

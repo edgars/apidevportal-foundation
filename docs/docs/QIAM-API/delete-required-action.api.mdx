@@ -1,0 +1,105 @@
+---
+id: delete-required-action
+title: "deleteRequiredAction"
+description: "Delete required action"
+sidebar_label: "deleteRequiredAction"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SuaTi3gxd2wk2/BmkOxDwxtdgqCgZGZWIhtuZLcNDD830fKH43XNIcOCBCJpvkeHx/dSA87J5OVnNc+w9JrBV6bUvyAEnZYUESuI5miU1ZX/EQm8hZz9CgsPtbaYipAhQeRNBXa8PpdSmlpSLvvs+ZDkkVXmdIhoTby880X/pvW/2nEV1N6xm7bSFZgoaBKlnk2UnNKBT6jWiU9oJtFyAv5L80QFZwirkrjhU4/XAf8jpBMvK0xkk5lWACz8MeKqzlvdbmThOz8MQ8RXVR0aKOz6JBrcK/Q5xwVZntGpv9gQLMgKTLzoq+MOjqJjJvQcRvDZJTxAPexI+DiJjBu6U2H9mnQtbY5Fcm8r1wSx3s8qtzAfobPwNAzZYoY0kJzPUJxgYtDVVvtj6EAKIXO/fFmjyTAan2a8MAtdiOfpo09M7DsteD7BsGiDQbQ5daETO2DGN96bmLOfMT94mEp5r/uXo1gmWkn6AdjCg1jixZLhWJrrCCZxBvFZlRNkQlJM4aeinM4HGajQMbu4tSomnclCM5zY1U7Ep9mNxyojPMFhIZ723TjE8N+iHFBJk00gQWvwoW96yX0+OzjKgcdKATKTW+OlUyGJZm648SOgz8olHSepgFmxJtfb5oNOPxt87bl8GONlqdOxyewGjY8GPJAqh2fyZ5byB1eaOZqaPxavLGoZ7vqg1AeJUPnNd/oSOMYPwS8p+8icmFn30Gm07Bdtyc7e7v4vlguyNV/AbyU4QQ=
+sidebar_class_name: "delete api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"deleteRequiredAction"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/{realm}/authentication/required-actions/{alias}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Delete required action
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"alias","description":"Alias of required action","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

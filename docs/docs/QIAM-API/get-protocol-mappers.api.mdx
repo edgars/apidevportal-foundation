@@ -1,0 +1,188 @@
+---
+id: get-protocol-mappers
+title: "getProtocolMappers"
+description: "Return list of all protocol mappers, which will be used when generating tokens issued for particular client."
+sidebar_label: "getProtocolMappers"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VN9P2zAQ/lc8P4FUGrbHvKEJIYSmIWBPqJpc59oYHNvYF0oV5X/fnZOWFqg0MWl9aXy/77vvrpOolkmW9/K7NeAwydlEVpB0NAGNd7KUN4BtdMKahMIvhLJWhOjRa29Fo0KAmCZiVRtdi5Uh5RxEm6AiETixBAdRoXFLgf4RXBImpZa0Cx9FUBGNbq2KQufsUzmRPmQH7y4rSr4EvB6T/RhykQn5qQaQH+V9Jw1X+dRCXJPOkYaeSVMceiZdQ6Nk2Ulch6zASMXInlS4tiyhShp6j3GCwvo1TARlG/kWkSwVbCKOnEdhqi/HZBThqTURqGyMLfxV7mSaQB8Hspvq36LO2DsF7xIkdvh2esp/+838vKIk2jsk/FlLKFuj8wSKh8Qm3fucfv4AGmXPv4mkWdR+nFYeDzVRyqLLOPXFMNtUdKbqC3hWtlUIJ3lCqdhQ6aTZjjdBfN7Mto2WQtWIIZVF8Qhrbb16nMKL4han2jeFqhrjipwr5Z4T6DYaXOcASmtI6XcmHwlmuwa33NYAzb7Ztk9OvGERv+egIkTJTRu38NnSYAb9aqxNnHE94ub89k6cXV++I89dbXgJhNqaiAgLiOA05K3AGsSBYNNxVErnUe2Ds1qtpluAfFwWlddtQ8jnWTI/GNWhiK/TUxYEn7BRueGRcjRBsVk48bpxey10r3T538dhHAvCCxbBKpPbyjB0I+3uZblZ2pF39FXmTXpDPWbqW/IROWrChMN03Vwl+BVt37N4uC/MqMokNbe8kAtlE20kgb5zcTgJ15ip+KyiYeOPHQ+ienQzLv2xOHBrPgRiFCq33q1jU+AAC5+aTxXyuaQEfD8jqxpURYvDMAyKM1q4gDsu7+4O47e9LBfnd7R1fwD/eUuT
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getProtocolMappers"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/evaluate-scopes/protocol-mappers"}
+>
+  
+</MethodEndpoint>
+
+
+
+Return list of all protocol mappers, which will be used when generating tokens issued for particular client.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"scope","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

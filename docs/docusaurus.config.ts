@@ -1,7 +1,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
-import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 
@@ -12,6 +11,7 @@ const config: Config = {
 
   onBrokenAnchors: "ignore",
   onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: 'ignore',
 
   // Set the production url of your site here
   url: 'https://qriar-labs.github.io',
@@ -24,8 +24,7 @@ const config: Config = {
   organizationName: 'qriar-labs', // Usually your GitHub org/user name.
   projectName: 'apidevportal-foundation', // Usually your repo name.
 
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'ignore',
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -80,6 +79,7 @@ const config: Config = {
           label: 'Tutorial',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/apidevportal-foundation/docs/QIAM-API', label: 'QIAM API', position: 'left'},
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -90,47 +90,9 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
+ 
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} QriarLabs API Platform.`,
     },
     prism: {
       theme: prismThemes.github,
@@ -156,9 +118,9 @@ const config: Config = {
         id: "api", // plugin id
         docsPluginId: "classic", // configured for preset-classic
         config: {
-          kc: {
+          qiam_api: {
             specPath: "apis/oas.yaml",
-            outputDir: "docs/kc",
+            outputDir: "docs/QIAM-API",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
@@ -177,7 +139,5 @@ const config: Config = {
   ],
  
 };
-
-
 
 export default config;

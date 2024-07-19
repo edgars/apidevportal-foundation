@@ -1,0 +1,279 @@
+---
+id: put-policies
+title: "putPolicies"
+description: "putPolicies"
+sidebar_label: "putPolicies"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVUtP4zAQ/itZn0AqDbvH3ljEAXFYVMopQqtpMm0MSey1HUoU5b/vjPNqmqJF2qqq3PE37/nGtXCwt2IViTVCltvgJsllIV4WQmk04KQq7hOxErp0jyqTsUQrFsLgnxKt+6mSSqxqkaCNjdQMJuhtJrEY0GvUBi0JvC3SjVXh6C/rgdYE8hfhq2XlWtg4xRz45CqNZE5tXzF2pKgNh+Q4ArrVfTQjEoyBioDSYW7/baGAHI9Q1hlZ7EWzmKZz5h4L2GaYHN1tlcoQCr6k9BLJqv8R2WDjrHu63cl92Tbn606ahnSddBlOe1Td9t5OWsV4imsnsy9VuQ/wMzcz6+dx85FpPJQkmorahvLj+no+d78efMhT4XRuNRhqukPDE18L6RHgUrpqp4HcEAvEqRUvDRgSXBTKBTL5dtnRQBqeBGdKXMxnd2yadZXP1Mpc06EhglEgqeq45WOjOFYirL2zJox9Ta76OQ/1mIZF897nUJqMtFLntF2F4RtWcabgbYkfwI6WscpDYEqH3qz1ni3GpZGu8gYgjtHa3069IaUavRwDnjihtuRT2JAhOxZd5p4JCAaNbwQzej0uirs2oil3o56GfalOKz+IB9K1pT6mWTRhzKhyQpSobnxy40xHPZbkFLAsdsqn1k3lQ1fMdicG67unTXDzeD+LcZNKG9AXBkhgcIcGixiDnTKBSzH4xNiy24gQ+4047ebhcFgOHVVmHyYqLvORGAvBY9AG8X15zQKtrMuhGPcbT1dwRIHzy83hhwt1BtJb9VHU3URGYtWT4mQkeWj7I9U1JdcMr+stWHw2WdOwmAbA8KTR8R2M5C76liXSdh3dQWZxFtnwToiLdcezy+ATIp7Not9XBW+rd8hK/kdHquhAdN/3FCGhmeWg2rvb1vXVhi2MurPnasLix+cNYbfdk5irxK8TOPCeoF/vWunhZfCyWmRQ7EvYM7Y1yZ+/pBKioQ==
+sidebar_class_name: "put api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"putPolicies"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/{realm}/client-policies/policies"}
+>
+  
+</MethodEndpoint>
+
+
+
+putPolicies
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          ClientPoliciesRepresentation
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  policies
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object[]
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                >
+                  Array [
+                </div>
+              </li><SchemaItem
+                collapsible={false}
+                name={"name"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"description"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"enabled"}
+                required={false}
+                schemaName={"boolean"}
+                qualifierMessage={undefined}
+                schema={{"type":"boolean"}}
+              >
+                
+              </SchemaItem><SchemaItem
+                collapsible={true}
+                className={"schemaItem"}
+              >
+                <details
+                  style={{}}
+                  className={"openapi-markdown__details"}
+                >
+                  <summary
+                    style={{}}
+                  >
+                    <span
+                      className={"openapi-schema__container"}
+                    >
+                      <strong
+                        className={"openapi-schema__property"}
+                      >
+                        conditions
+                      </strong><span
+                        className={"openapi-schema__name"}
+                      >
+                         object[]
+                      </span>
+                    </span>
+                  </summary><div
+                    style={{"marginLeft":"1rem"}}
+                  >
+                    <li>
+                      <div
+                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                      >
+                        Array [
+                      </div>
+                    </li><SchemaItem
+                      collapsible={false}
+                      name={"condition"}
+                      required={false}
+                      schemaName={"string"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"string"}}
+                    >
+                      
+                    </SchemaItem><SchemaItem
+                      collapsible={false}
+                      name={"configuration"}
+                      required={false}
+                      schemaName={"object[]"}
+                      qualifierMessage={undefined}
+                      schema={{"type":"array","items":{"type":"object"}}}
+                    >
+                      
+                    </SchemaItem><li>
+                      <div
+                        style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                      >
+                        ]
+                      </div>
+                    </li>
+                  </div>
+                </details>
+              </SchemaItem><SchemaItem
+                collapsible={false}
+                name={"profiles"}
+                required={false}
+                schemaName={"string[]"}
+                qualifierMessage={undefined}
+                schema={{"type":"array","items":{"type":"string"}}}
+              >
+                
+              </SchemaItem><li>
+                <div
+                  style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                >
+                  ]
+                </div>
+              </li>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

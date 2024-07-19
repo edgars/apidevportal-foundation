@@ -1,0 +1,203 @@
+---
+id: get-client-role-groups
+title: "getClientRoleGroups"
+description: "Returns a stream of groups that have the specified role name"
+sidebar_label: "getClientRoleGroups"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1P3DAQ/SuuTyBtE9pjTkUIIcSh1UJPaFV5nUliSGJjO8Aqyn/vjPPBbpdFsED3sokznnlvZt5My73IHU+u+VyX4PhixlNw0irjla55wufgG1s7JpjzFkTFdMZyqxvjmC+EZ4W4B3wC5gxIlSlImUVPrBYV8BnXBqwgV+cpOsvBn5QKak/BzoIXtDHCorEHSzharijsXQN2hd+Cm4QvrYJsDsaCw9vBIf8XqcpYJkoHM2YDZoScNWWJb+vXCD/BbX9InQILIDYdd0wvb0B6F2EIJwuoBE9a7leGkGAWVJ3zDj/5VUknmbYVvj8PPFPW+S2o4RSBuab0zOsBcMTO81pbzCBSqSFHNJhbbUesNbLpPgJUJR63IOGZqpoKg1RLsJSlHp77H/iM8MUTPGyzstoCGE5DW7GDWnum0i+HaGThrlGIiSfeNvCq2E5VBh92RFfpZ3glTXwdNLHJi5pxUkz0vtgLuu2Mrh1KGS98Pzqiv82APy8wiNS1x4anr8KYUsnQ+vGNI5N2O2YvCd7Rb8ZRrYUeBB0EjFQTHrehRl0sg8Zd3Kq0i4kbPk4J6OJ8FL4Dez+qvrEluii8Ny6J41tYyVKL2wgeBVGLpK5ikVaqjkMMF7g6kI1VfhUcCCnBuT9e3wJSuF6sG1wSnT4lm2YTPwo8dm4YOCAsWE5kVZ3pYKl8SPbFgI0dEx42P728Yse/zrcKe1UoxxRNztEEdZSBhVoCw/4PY2iHs2gokZChRJvJeXh4iKYEaZvHqZZNNc1FhExZ7UF8i47owGjnKxEIDw2JlWP9LGY0jNk0jTdItE+N8t5NMCTaw6OPTSlUABqItUMDXfNklP7QQfiU9HoMywnf1nU09BHWuUB6dL9tl8LBb1t2HR33Y4+aI1VOLEvSVL8idrP8lC3yLHcs4c7Ndi/Khm6EcfJ68O/cKy/AHPfYnsA+cru8gLJfbE8YF/RiFYF8YxsczIcpfMh2LJ5nYQyHol6t4xjh9d39tsytAdkvKOpn74hbu2kf0pNiuwUaFyBSHKxUjf77MQ5ks95aW/uIyjhtnLPTK5zKfwHdMq+U
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getClientRoleGroups"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/clients/{id}/roles/{role-name}/groups"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns a stream of groups that have the specified role name
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"role-name","description":"the role name.","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"briefRepresentation","description":"if false, return a full representation of the {@code GroupRepresentation} objects.","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"first","description":"first result to return. Ignored if negative or {@code null}.","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"query","name":"max","description":"maximum number of results to return. Ignored if negative or {@code null}.","schema":{"type":"string"},"style":"form"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        object
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

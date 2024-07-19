@@ -1,0 +1,205 @@
+---
+id: get-events-config
+title: "getEventsConfig"
+description: "Get the events provider configuration Returns JSON object with events provider configuration"
+sidebar_label: "getEventsConfig"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1VMFu2zAM/RVNpxYI4m4Ydsit2IKi67ANaXYKioGRmVitbakSnTQw/O+jJCdx1rXDDisCVJYeqcfHR7WSYO3lZCFnCGXlxWVe6VrejWSOXjltSZtaTuQVkqACBW6wJi+sMxudoxPK1Cu9bhwEnJghNa724vPtt6/CLO9RkdhqKl4PkyNpLKb1dc6XrZGmMeBjhPG5Q29N7ZGZtvLdxUX4d0rw2w3DOC1xXDgFa0utYs7s3gdIK70qsIKwop1FDkoUOZCJMQPS6YLEdlrDssR8AF8aUyLUshvtIU9W9zUcUZo5rNFx1pVxFVDa+vD+GPZFe6aJzg+iwDnYcYwmrIb7npyu17ILwYlQlGbOp/8YDqGz07+XNsB9QgJdvgZnPGkqw1400LBvM7TcN/5OCnXhj6UGBxVSrH7RsjQcaoEKJl/zAX+5kEj+7sC4KwJEnNWGhM7fnEdnPDbaBXLkGhw97/FeAT6iXSTqdWV50bHJmUhhessFGwQeE5m18bIuS+3K1N6GHt1mT7xxJUMLIusnWfaAO1UaeBjjE4TsY2WqLCqZxVw+XudRNU7TLiYApdD7n2QekOtb3A0Bt6GK1OBT2KGscLHsy40dQXBsuqCwrlcmIvvG3PTc0myL2fR2Li6/Xz9TeF5oL/gHB4hwuEKHtULBXo4PwAvJxv30gYrTdyrOdrsdHwQybp3lRjXV0RgjGVRNJN6OL8KGNZ4qiAX3ruAOieQucXgWTvi3x/H/389V3wPCJ8psCTrWEGtuew8t5GRv45Qs6RNoc5sLri5g2nYJHn+4suvC9mODLniDlxtwOgxddEqufT+AKyg9vlL32awfh3Pxwrz8kfr+EanDE7KBsglfvOSmHeaxu2NggcB6RFLp7JLdaWkQ9ezdPRmzq+mcLfoLEmo+qQ==
+sidebar_class_name: "get api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"getEventsConfig"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/{realm}/events/config"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get the events provider configuration Returns JSON object with events provider configuration
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          OK
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"eventsEnabled"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"eventsExpiration"}
+                        required={false}
+                        schemaName={"int64"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"integer","format":"int64"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"eventsListeners"}
+                        required={false}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"array","items":{"type":"string"}}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"enabledEventTypes"}
+                        required={false}
+                        schemaName={"string[]"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"array","items":{"type":"string"}}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"adminEventsEnabled"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"adminEventsDetailsEnabled"}
+                        required={false}
+                        schemaName={"boolean"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"boolean"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"eventsEnabled\": true,\n  \"eventsExpiration\": 0,\n  \"eventsListeners\": [\n    \"string\"\n  ],\n  \"enabledEventTypes\": [\n    \"string\"\n  ],\n  \"adminEventsEnabled\": true,\n  \"adminEventsDetailsEnabled\": true\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

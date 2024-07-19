@@ -1,0 +1,227 @@
+---
+id: put-mapper
+title: "putMapper"
+description: "Update a mapper for the identity provider"
+sidebar_label: "putMapper"
+hide_title: true
+hide_table_of_contents: true
+api: eJy1Vt1P2zAQ/1c8P4FUGjbtKW9s4gFNm6pSnio0XZNrY0jizHYoVZT/fXeOk9KviXUaQsg+3/fvdxca6WBlZTyXdymWTrmNmBj9olI0Vj6OZIo2MapySpcylg9VCg4FiAKqCo1YaiNchkL1tlWwlSOpSQHY7i4ly6p2370NvRj8VaN1X3S6kXGzF6JPo8+is5piZdDSi/dIPhJdOrqyPSnkKvEP0ZNlJ420SYYF8MltKiS3evGEiSNDypD8OYWWX1X6Rsc6o8qVbEeyhAKPPqi97G5yBfZdmqH6Y6pUy1KtjiULaaq4LsgnO2nvuWjJCcXK8b39a70JSSpd2s7lp+vPh2D80OJraDQbVGCoMY6pEc+peaxSgctk3zFyCXkh92njpYJVxEWpHdHlw2XggTJIEDhT4+gQtG2LrNv46qwqKjq0o6PRwaPxHxwTTfZr6voq/Ms/xKMRo45mOswIE5QjxzJqfNfaqCfSVT9bkSqtgzJBGzW+4jbqxpHuKm3JhUXz0oNUm5y8Zc5VNo6iZ9wkuYbnMb4CJzBOdBFBWqgy8uGsz8hiUhsK6R1AQpHsT6efkeqeP75VuOdCO/7sqg2Vc2AZOsL3BYKhMWA28axOt6vgtsuon8q+ZwMGw/3EDJ5W6EdvqzFMHOehyqX2GYcJ+hZ6JG64L2J6ez8TN5O7AwbMMmUF/cKgIgwu0SBBM2zGE87GYYVB4lfYLkjr9Xo8AKXNKkp1Uhfb4R1JRrdL4uP4mgWVtq4A3/jQLiKTGDbuTuLNdnn+1UIPiDp8dVGVg/KZ+MybQNq5jPsFcMBalvW8pXPcz2qgLosIduJWRqWwq6ZZgMUHk7cti4knhglJxxcwChaMFdEzVZbPxJgl5Bb/UOvFNIzppTixkI5WGIRQbiSHzmu+0ZEQGhYer42zEjkvaNe7s4O+XV1nRCe79pG0MgTGlUHoHsKn4mrG5lvDg+/zztKbPMxIdxH+Fyh06j8jsOa1Sn99XO3r8WvGyxqZQ7mqYcW6nUv++Q22ugnO
+sidebar_class_name: "put api-method"
+info_path: QIAM-API/keycloak-admin-rest-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Markdown from "@theme/Markdown";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"putMapper"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"put"}
+  path={"/{realm}/identity-provider/instances/{alias}/mappers/{id}"}
+>
+  
+</MethodEndpoint>
+
+
+
+Update a mapper for the identity provider
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"realm","description":"realm name (not id!)","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"alias","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"in":"path","name":"id","description":"Mapper id","required":true,"schema":{"type":"string"},"style":"simple"}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><MimeTabs
+  className={"openapi-tabs__mime"}
+>
+  <TabItem
+    label={"application/json"}
+    value={"application/json-schema"}
+  >
+    <details
+      style={{}}
+      className={"openapi-markdown__details mime"}
+      data-collapsed={false}
+      open={true}
+    >
+      <summary
+        style={{}}
+        className={"openapi-markdown__details-summary-mime"}
+      >
+        <h3
+          className={"openapi-markdown__details-summary-header-body"}
+        >
+          Body
+        </h3>
+      </summary><div
+        style={{"textAlign":"left","marginLeft":"1rem"}}
+      >
+        <div
+          style={{"marginTop":"1rem","marginBottom":"1rem"}}
+        >
+          
+          
+          IdentityProviderMapperRepresentation
+          
+          
+        </div>
+      </div><ul
+        style={{"marginLeft":"1rem"}}
+      >
+        <SchemaItem
+          collapsible={false}
+          name={"id"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"name"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"identityProviderAlias"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={false}
+          name={"identityProviderMapper"}
+          required={false}
+          schemaName={"string"}
+          qualifierMessage={undefined}
+          schema={{"type":"string"}}
+        >
+          
+        </SchemaItem><SchemaItem
+          collapsible={true}
+          className={"schemaItem"}
+        >
+          <details
+            style={{}}
+            className={"openapi-markdown__details"}
+          >
+            <summary
+              style={{}}
+            >
+              <span
+                className={"openapi-schema__container"}
+              >
+                <strong
+                  className={"openapi-schema__property"}
+                >
+                  config
+                </strong><span
+                  className={"openapi-schema__name"}
+                >
+                   object
+                </span>
+              </span>
+            </summary><div
+              style={{"marginLeft":"1rem"}}
+            >
+              <SchemaItem
+                name={"property name*"}
+                required={false}
+                schemaName={"string"}
+                qualifierMessage={undefined}
+                schema={{"type":"string"}}
+                collapsible={false}
+                discriminator={false}
+              >
+                
+              </SchemaItem>
+            </div>
+          </details>
+        </SchemaItem>
+      </ul>
+    </details>
+  </TabItem>
+</MimeTabs><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"204"}
+        value={"204"}
+      >
+        <div>
+          
+          
+          No Content
+          
+          
+        </div><div>
+          
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>
