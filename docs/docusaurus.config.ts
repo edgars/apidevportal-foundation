@@ -101,9 +101,9 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 
   markdown: {
-    mermaid: true,
+
   },
-  themes: ['@docusaurus/theme-mermaid', 'docusaurus-theme-openapi-docs'],
+  themes: [ 'docusaurus-theme-openapi-docs'],
   stylesheets: [
     {
       href: "https://use.fontawesome.com/releases/v5.11.0/css/all.css",
