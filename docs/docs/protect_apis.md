@@ -5,6 +5,8 @@ sidebar_position: 1
 
 This guide explains how to secure API executions using OAuth2 tokens generated through QIAM. By leveraging QIAM’s token management and validation, you can implement robust authentication and authorization for your APIs.
 
+Keep in mind, that as a consumer, you already have the access for a consumer key and consumer secret
+
 ---
 
 ## Prerequisites
