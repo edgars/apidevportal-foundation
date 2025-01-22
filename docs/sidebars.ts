@@ -16,7 +16,13 @@ const sidebars: SidebarsConfig = {
 
   tutorialSidebar: [
     'intro',
-    
+    {
+      type: 'category',
+      label: 'Tutorial for DevPortal',
+      items: ['tutorial-basics/create-a-document'],
+    },
+    'protect_apis',
+
       {
         type: "category",
         label: "QIAM APIs",
