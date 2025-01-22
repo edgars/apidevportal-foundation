@@ -11,8 +11,8 @@ Keep in mind, that as a consumer, you already have the access for a consumer key
 
 ## Prerequisites
 
-1. **QIAM Server**:
-   - A running QIAM instance.
+1. **QAP Credentials**:
+   - Every consumer will have a pre-generated key and secret
 2. **Configured Realm and Client**:
    - A realm in QIAM with a client configured.
    - Obtain the client ID and client secret (if required).
@@ -20,6 +20,8 @@ Keep in mind, that as a consumer, you already have the access for a consumer key
    - Users should be created and assigned roles for authorization.
 4. **Secured API**:
    - An API or service that will validate the tokens.
+
+![Keys](./keys.png)
 
 ---
 

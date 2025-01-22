@@ -1,0 +1,377 @@
+---
+id: get-museum-hours
+title: "Get museum hours"
+description: "Get upcoming museum operating hours."
+sidebar_label: "Get museum hours"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdV99v2zYQ/lcIYcAazLZkORkav2zpUjQB1jZY0r2kXktLZ4utKKoklcXw9L/vjpRs+Ue8YMZelheHFO/uu7vvjsdlkIJJtCitUEUwDt6AZVWZKCmKOZOVgUoyVYLmljYyVWkzCHpBs6WK6xSF5mDfuqNX9B0/Wz43wfg+eN8eM8GkF5RccwkWNH1bBgUuUNhYru0lt4BygiB8q0AvcLEJ7JaOEYYUjzKrmAarBTwAm1W20rCNks20kgN2CTNe5daQhFUpX3xvnAZywiQZSB6Ml4FdlB6KRnn8MlNacos7qccFj1yWOR2Jo3jUj+J+PArqurdyouTzf8B/gydYUckp6C76vThEYWEO2ulw8IPxsAMi7lrOhRT2sOl33qqaoecLwzBOjPA+23TUCyR/FLKSwXgUdYAMz+oa86rBlJhiMKQnjiL62UpelSRgHHMShRYKS2d4WeYicfwIvxg6uOwA2tTwqzCWPNhPSYYJY9xTQ/PC+9Z4xLXmFBNhQZpdxZdc5Iu9+mwGjbmONjX9AgnFu9QkY4X32vFkj26iarbLTfJ8gTQYbHPrtD+M+6Ph2t6TlLTCOiFXOTWtJWC5FfvoXHKLVUeI/nhxHw0nHz+mf8X3UX80ORn/hDv9M9o6+W6HOXeotBMH8qMwTBUYa1NCImYi8dXEPmD6WXzq/GOEhXnA7MXnq6uxlJ9PNn2NzsdIlAb3L7kye8K3bT2hY8eYPyIua+TDlw55Tbz/VgkNKXW6VVaaLHQdm6yz5duk45zvlfX2t9V2Y7GhrKvFTysUWCiVlByL3bdsT6u2ENH6A88rcG3WU7NpXOf94bALs03ERh5aF3u7wvExwqNjhE+PET7bFB5Ge4R/fEr45TGWz48QjqNjhI/Jcxw/O2CTmv56wem+vv+Kp4yqBIw90PuxlU5zkD/s3gGHm67/utvu1rXaCK6L7NDh33kuUoeIzbBAsa7rTnW+1lrpoPX1dNfXd8pi06mK9P/jKW7ivJapZsbzHTPDReg7cj9r5j0D+qEd6yqd44nM2tKMwxDbo0ryxQAnyvCTVMnXENcmpIuEl6LVg/8GNEkYSCot7MIp8v3wJucJZCpPQV9UZPx+0j15SxH0QXri/CoQBKkdeWg95UYkznNRzJQ72ETgNw+aeY3s4uZ652a8lnwuCmzAPTatLEshF/PMzqq8I+SmCBqoNE/c5f+nsFl7mVHIBA5FjBcpIwB0XaHuAXtVidz6s7nC+Xa6YA0gYhbF2UMYDuKBK3LQ0ryf3XqFT8TeVNMV/D6fa8AYFDZsqIr4yH/koqDkWeDy5440nno6qy6fSS5CIh8yHQp/lzfz6dvrux1xN0YgdRIYKD0PG6EQB9nQ5aNUxkpedLTQHdcEruXcRj6W64p77hOmYYWFRxuWOcf5uW5wLhua3wcbNEfWZQiM9pdLJA980Hld07Yfu91lKwyfUkGNZzw3cADlf/Ce2evRV1hsPbKa0SDwjf/ZgA88YA4Ybh5G/9LmgZfLAZvtk2htdEILLciqayCYSeDYIVzOvNAFvlDKrtTO64S0rNrhm9d3SNW/AeqgCjI=
+sidebar_class_name: "get api-method"
+info_path: museus-apis/redocly-museum-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get museum hours"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/museum-hours"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get upcoming museum operating hours.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Query Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"startDate","in":"query","description":"Starting date to retrieve future operating hours from. Defaults to today's date.","schema":{"type":"string","format":"date","example":"2023-02-23"}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"page","in":"query","description":"Page number to retrieve.","schema":{"type":"integer","default":1,"example":2}}}
+      >
+        
+      </ParamsItem><ParamsItem
+        className={"paramsItem"}
+        param={{"name":"limit","in":"query","description":"Number of days per page.","schema":{"type":"integer","default":10,"maximum":30,"example":15}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Success.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/json"}
+              value={"application/json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <li>
+                        <div
+                          style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+                        >
+                          Array [
+                        </div>
+                      </li><SchemaItem
+                        collapsible={false}
+                        name={"date"}
+                        required={true}
+                        schemaName={"date"}
+                        qualifierMessage={undefined}
+                        schema={{"description":"Date the operating hours apply to.","example":"2024-12-31","type":"string","format":"date","title":"Date"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"timeOpen"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={"**Possible values:** Value must match regular expression `^([01]\\d|2[0-3]):?([0-5]\\d)$`"}
+                        schema={{"type":"string","pattern":"^([01]\\d|2[0-3]):?([0-5]\\d)$","description":"Time the museum opens on a specific date. Uses 24 hour time format (`HH:mm`).","example":"09:00"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"timeClose"}
+                        required={true}
+                        schemaName={"string"}
+                        qualifierMessage={"**Possible values:** Value must match regular expression `^([01]\\d|2[0-3]):?([0-5]\\d)$`"}
+                        schema={{"description":"Time the museum closes on a specific date. Uses 24 hour time format (`HH:mm`).","type":"string","pattern":"^([01]\\d|2[0-3]):?([0-5]\\d)$","example":"18:00"}}
+                      >
+                        
+                      </SchemaItem><li>
+                        <div
+                          style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+                        >
+                          ]
+                        </div>
+                      </li>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"[\n  {\n    \"date\": \"2024-12-31\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  }\n]"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem><TabItem
+                  label={"default_example"}
+                  value={"default_example"}
+                >
+                  <div
+                    className={"openapi-example__summary"}
+                  >
+                    Get hours response
+                  </div><ResponseSamples
+                    responseExample={"[\n  {\n    \"date\": \"2023-09-11\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-12\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-13\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-14\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-15\",\n    \"timeOpen\": \"10:00\",\n    \"timeClose\": \"16:00\"\n  },\n  {\n    \"date\": \"2023-09-18\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-19\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-20\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-21\",\n    \"timeOpen\": \"09:00\",\n    \"timeClose\": \"18:00\"\n  },\n  {\n    \"date\": \"2023-09-22\",\n    \"timeOpen\": \"10:00\",\n    \"timeClose\": \"16:00\"\n  }\n]"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Bad request.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/problem+json"}
+              value={"application/problem+json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"type"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"object"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"title"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Validation failed"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"type\": \"object\",\n  \"title\": \"Validation failed\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          Not found.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/problem+json"}
+              value={"application/problem+json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"type"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"object"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"title"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Validation failed"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"type\": \"object\",\n  \"title\": \"Validation failed\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

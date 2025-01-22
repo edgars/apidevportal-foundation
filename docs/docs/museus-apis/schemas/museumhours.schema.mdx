@@ -1,0 +1,70 @@
+---
+id: museumhours
+title: "MuseumHours"
+description: "List of museum operating hours for a date range."
+sidebar_label: "MuseumHours"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"MuseumHours"}
+>
+</Heading>
+
+
+
+List of museum operating hours for a date range.
+
+<ul>
+  <li>
+    <div
+      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem","paddingBottom":".5rem"}}
+    >
+      Array [
+    </div>
+  </li><SchemaItem
+    collapsible={false}
+    name={"date"}
+    required={true}
+    schemaName={"date"}
+    qualifierMessage={undefined}
+    schema={{"description":"Date the operating hours apply to.","example":"2024-12-31","type":"string","format":"date","title":"Date"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"timeOpen"}
+    required={true}
+    schemaName={"string"}
+    qualifierMessage={"**Possible values:** Value must match regular expression `^([01]\\d|2[0-3]):?([0-5]\\d)$`"}
+    schema={{"type":"string","pattern":"^([01]\\d|2[0-3]):?([0-5]\\d)$","description":"Time the museum opens on a specific date. Uses 24 hour time format (`HH:mm`).","example":"09:00"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"timeClose"}
+    required={true}
+    schemaName={"string"}
+    qualifierMessage={"**Possible values:** Value must match regular expression `^([01]\\d|2[0-3]):?([0-5]\\d)$`"}
+    schema={{"description":"Time the museum closes on a specific date. Uses 24 hour time format (`HH:mm`).","type":"string","pattern":"^([01]\\d|2[0-3]):?([0-5]\\d)$","example":"18:00"}}
+  >
+    
+  </SchemaItem><li>
+    <div
+      style={{"fontSize":"var(--ifm-code-font-size)","opacity":"0.6","marginLeft":"-.5rem"}}
+    >
+      ]
+    </div>
+  </li>
+</ul>
+            

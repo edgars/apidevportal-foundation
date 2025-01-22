@@ -1,0 +1,85 @@
+---
+id: specialevent
+title: "SpecialEvent"
+description: ""
+sidebar_label: "SpecialEvent"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"SpecialEvent"}
+>
+</Heading>
+
+
+
+
+
+<ul>
+  <SchemaItem
+    collapsible={false}
+    name={"eventId"}
+    required={false}
+    schemaName={"uuid"}
+    qualifierMessage={undefined}
+    schema={{"description":"Identifier for a special event.","type":"string","format":"uuid","example":"3be6453c-03eb-4357-ae5a-984a0e574a54","title":"EventId"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"name"}
+    required={true}
+    schemaName={"EventName (string)"}
+    qualifierMessage={undefined}
+    schema={{"type":"string","description":"Name of the special event.","example":"Pirate Coding Workshop","title":"EventName"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"location"}
+    required={true}
+    schemaName={"EventLocation (string)"}
+    qualifierMessage={undefined}
+    schema={{"type":"string","description":"Location where the special event is held.","example":"Computer Room","title":"EventLocation"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"eventDescription"}
+    required={true}
+    schemaName={"EventDescription (string)"}
+    qualifierMessage={undefined}
+    schema={{"type":"string","description":"Description of the special event.","example":"Captain Blackbeard shares his love of the C...language. And possibly Arrrrr (R lang).","title":"EventDescription"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"dates"}
+    required={true}
+    schemaName={"date[]"}
+    qualifierMessage={undefined}
+    schema={{"type":"array","items":{"type":"string","format":"date","example":"2023-10-29","title":"Date"},"description":"List of planned dates for the special event.","title":"EventDates"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"price"}
+    required={true}
+    schemaName={"float"}
+    qualifierMessage={undefined}
+    schema={{"description":"Price of a ticket for the special event.","type":"number","format":"float","example":25,"title":"EventPrice"}}
+  >
+    
+  </SchemaItem>
+</ul>
+            

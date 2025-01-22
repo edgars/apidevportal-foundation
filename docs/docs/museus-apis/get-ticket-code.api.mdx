@@ -1,0 +1,312 @@
+---
+id: get-ticket-code
+title: "Get ticket QR code"
+description: "Return an image of your ticket with scannable QR code. Used for event entry."
+sidebar_label: "Get ticket QR code"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVcFy2zYQ/RUMTs1UEmNVdj061elkMj6kTW2nF48nswSXImIQYABQjYbDf88uCUqyFeeUUw8agcDu4u2+fdhOFhiU103Uzsq1vMHYeivACl3DBoUrxc61XkStHjGK/3SsRFBgLeQGxT83QrkCF+JjwEKUzgvcoo2Cfn63kDPpGvTAoa8LCr7BeDfE+ZOc6DTCJsj1vRw3g3yYyQY81BjR80EnLX2Q43g7xZhJzSgbiBWtn0K/LuhaXWr0AxKYMEdH67oN2NYjvASX9jdoGR9OpkPOjNvjl1Z7JNDRtziTQVVYg1x3Mu4aRhSi13ZDlnRVDZF22lYzPvwKdWPYBM5XcP67gvlvF+XlfLU8y+dwka/mS7wslxeX55ewUrLvH/i20DgbMPAFy9ev+e9pbrf7ko8FnvBONI0oGLlyNpIFhxiOsoZg0schg2dVm2iGJxzDxK1oJ2pTCU9JfrEkubbgd2yh41CSA/vDtZR938/k6nsZv4FCMAsYnqcFTWO0Groqa7yjotS/fg7s1J3y5PLPqCIFIEvqxajHIo+np2we2EuO/R78j4z/BaOLAZEoQRvqm/7gKN967/w+19Vprn+5SBVubfH/yZQ2ScaVS7JnWKzZtczGLgtZN4m6z754Og/ot5PsW2/ItIqxCessIx06ZXYL5ersU+3UY0bfIaMsLTQ6G/tyTkvJYgqoWq/jbgj0fjj7YEBh5UyB/qplFPcPx5a3XMqxWi/Y7yvCkGR6Dvg7h6DVUAJtSzcYplLcjKDFGFFcfbg+fbBIA4NCZiJvoyjQ6E0Vy9YcOQ3K09QRHlQkMkZ1JilyybTCQM91IRgA645iL8SbVpukZOO2KPKdSIC4xbjOI4SzxXJxxgJFX4e/y9sx4Au1D22+hz+HjUeqgY1Z6lnCx/lTU2omLyLUfxx5k9XLrA58KqMz7kJqeaTHkIOl5//99d2JO7MfaDIpXDi/yZJTVmsCxHw0LsQa7FGUd7h/N9Pb9pyR7iC+nz0IU/9E/BqzxgBNsT5l1CVl3KcpF8h6fTTwSBzUqxWlwzZdRy2HH73pe96m99Fzp9NyC14zlqHvCx14TeorwQT8QZ6/3KRR90r8zAH63XzTJlieCVswLX/R8hF3x0O+fyDbCoHkNyQzHl8phU08cjyMNxbz/rV59/aOGuAbHRAMjg==
+sidebar_class_name: "get api-method"
+info_path: museus-apis/redocly-museum-api
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ticket QR code"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/tickets/{ticketId}/qr"}
+>
+  
+</MethodEndpoint>
+
+
+
+Return an image of your ticket with scannable QR code. Used for event entry.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<details
+  style={{"marginBottom":"1rem"}}
+  className={"openapi-markdown__details"}
+  data-collapsed={false}
+  open={true}
+>
+  <summary
+    style={{}}
+  >
+    <h3
+      className={"openapi-markdown__details-summary-header-params"}
+    >
+      Path Parameters
+    </h3>
+  </summary><div>
+    <ul>
+      <ParamsItem
+        className={"paramsItem"}
+        param={{"name":"ticketId","in":"path","description":"Identifier for a ticket to a museum event. Used to generate ticket image.","required":true,"schema":{"type":"string","format":"uuid","example":"a54a57ca-36f8-421b-a6b4-2e8f26858a4c"}}}
+      >
+        
+      </ParamsItem>
+    </ul>
+  </div>
+</details><div>
+  <div>
+    <ApiTabs
+      label={undefined}
+      id={undefined}
+    >
+      <TabItem
+        label={"200"}
+        value={"200"}
+      >
+        <div>
+          
+          
+          Scannable event ticket in image format.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"image/png"}
+              value={"image/png"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <div
+                        style={{"marginTop":".5rem","marginBottom":".5rem"}}
+                      >
+                        
+                        
+                        string
+                        
+                        
+                      </div>
+                    </ul>
+                  </details>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"400"}
+        value={"400"}
+      >
+        <div>
+          
+          
+          Bad request.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/problem+json"}
+              value={"application/problem+json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"type"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"object"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"title"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Validation failed"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"type\": \"object\",\n  \"title\": \"Validation failed\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem><TabItem
+        label={"404"}
+        value={"404"}
+      >
+        <div>
+          
+          
+          Not found.
+          
+          
+        </div><div>
+          <MimeTabs
+            className={"openapi-tabs__mime"}
+            schemaType={"response"}
+          >
+            <TabItem
+              label={"application/problem+json"}
+              value={"application/problem+json"}
+            >
+              <SchemaTabs
+                className={"openapi-tabs__schema"}
+              >
+                <TabItem
+                  label={"Schema"}
+                  value={"Schema"}
+                >
+                  <details
+                    style={{}}
+                    className={"openapi-markdown__details response"}
+                    data-collapsed={false}
+                    open={true}
+                  >
+                    <summary
+                      style={{}}
+                      className={"openapi-markdown__details-summary-response"}
+                    >
+                      <strong>
+                        Schema
+                      </strong>
+                    </summary><div
+                      style={{"textAlign":"left","marginLeft":"1rem"}}
+                    >
+                      
+                    </div><ul
+                      style={{"marginLeft":"1rem"}}
+                    >
+                      <SchemaItem
+                        collapsible={false}
+                        name={"type"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"object"}}
+                      >
+                        
+                      </SchemaItem><SchemaItem
+                        collapsible={false}
+                        name={"title"}
+                        required={false}
+                        schemaName={"string"}
+                        qualifierMessage={undefined}
+                        schema={{"type":"string","example":"Validation failed"}}
+                      >
+                        
+                      </SchemaItem>
+                    </ul>
+                  </details>
+                </TabItem><TabItem
+                  label={"Example (from schema)"}
+                  value={"Example (from schema)"}
+                >
+                  <ResponseSamples
+                    responseExample={"{\n  \"type\": \"object\",\n  \"title\": \"Validation failed\"\n}"}
+                    language={"json"}
+                  >
+                    
+                  </ResponseSamples>
+                </TabItem>
+              </SchemaTabs>
+            </TabItem>
+          </MimeTabs>
+        </div>
+      </TabItem>
+    </ApiTabs>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 ---
-id: keycloak-admin-rest-api
-title: "Keycloak Admin REST API"
-description: "This is a REST API reference for the Keycloak Admin REST API."
+id: redocly-museum-api
+title: "Redocly Museum API"
+description: "Imaginary, but delightful Museum API for interacting with museum services and information. Built with love by Redocly."
 sidebar_label: Introduction
 sidebar_position: 0
 hide_title: true
@@ -16,12 +16,12 @@ import Export from "@theme/ApiExplorer/Export";
 
 <span
   className={"theme-doc-version-badge badge badge--secondary"}
-  children={"Version: 1.0"}
+  children={"Version: 1.2.1"}
 >
 </span>
 
 <Export
-  url={"/apis/oas.yaml"}
+  url={"/apis/museus.yaml"}
   proxy={undefined}
 >
   
@@ -30,13 +30,13 @@ import Export from "@theme/ApiExplorer/Export";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Keycloak Admin REST API"}
+  children={"Redocly Museum API"}
 >
 </Heading>
 
 
 
-This is a REST API reference for the Keycloak Admin REST API.
+Imaginary, but delightful Museum API for interacting with museum services and information. Built with love by Redocly.
 
 <div
   style={{"marginBottom":"2rem"}}
@@ -51,8 +51,8 @@ This is a REST API reference for the Keycloak Admin REST API.
     className={"openapi-tabs__security-schemes"}
   >
     <TabItem
-      label={"HTTP: Bearer Auth"}
-      value={"access_token"}
+      label={"HTTP: Basic Auth"}
+      value={"MuseumPlaceholderAuth"}
     >
       
       
@@ -71,7 +71,7 @@ This is a REST API reference for the Keycloak Admin REST API.
               <th>
                 HTTP Authorization Scheme:
               </th><td>
-                bearer
+                basic
               </td>
             </tr>
           </tbody>
@@ -87,8 +87,32 @@ This is a REST API reference for the Keycloak Admin REST API.
   >
     Contact
   </h3><span>
-    
+    [team@redocly.com](mailto:team@redocly.com)
   </span><span>
-    URL: [https://www.keycloak.org/documentation](mailto:https://www.keycloak.org/documentation)
+    URL: [https://redocly.com/docs/cli/](mailto:https://redocly.com/docs/cli/)
   </span>
+</div><div
+  style={{"marginBottom":"var(--ifm-paragraph-margin-bottom)"}}
+>
+  <h3
+    style={{"marginBottom":"0.25rem"}}
+  >
+    Terms of Service
+  </h3><a
+    href={"https://redocly.com/subscription-agreement/"}
+  >
+    https://redocly.com/subscription-agreement/
+  </a>
+</div><div
+  style={{"marginBottom":"var(--ifm-paragraph-margin-bottom)"}}
+>
+  <h3
+    style={{"marginBottom":"0.25rem"}}
+  >
+    License
+  </h3><a
+    href={"https://opensource.org/license/mit/"}
+  >
+    MIT
+  </a>
 </div>

@@ -1,12 +1,12 @@
 openapi: 3.0.2
 info:
-  title: Keycloak Admin REST API
-  description: This is a REST API reference for the Keycloak Admin REST API.
+  title: QIAM Admin REST API
+  description: This is a REST API reference for the QIAM Admin REST API.
   contact:
-    url: https://www.keycloak.org/documentation
+    url: https://konneqt.io/qiam
   version: '1.0'
 servers:
-  - url: https://keycloak.example.com/admin/realms
+  - url: https://qiam.example.com/admin/realms
 paths:
   /:
     get:

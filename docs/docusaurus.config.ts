@@ -66,9 +66,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'QriarLabs API Devportal',
+      title: 'QAP API Devportal',
       logo: {
-        alt: 'QriarLabs DevPortal',
+        alt: 'QAP DevPortal',
         src: 'img/just_q_blue.png',
       },
       items: [
@@ -92,7 +92,7 @@ const config: Config = {
       links: [
  
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} QriarLabs API Platform.`,
+      copyright: `Copyright © ${new Date().getFullYear()} https://konneqt.io`,
     },
     prism: {
       theme: prismThemes.github,
@@ -119,14 +119,14 @@ const config: Config = {
         docsPluginId: "classic", // configured for preset-classic
         config: {
           qiam_api: {
-            specPath: "apis/oas.yaml",
-            outputDir: "docs/QIAM-API",
+            specPath: "apis/museus.yaml",
+            outputDir: "docs/museus-apis",
             sidebarOptions: {
               groupPathsBy: "tag",
               categoryLinkSource: "tag",
             },
             template: "api.mustache", // Customize API MDX with mustache template
-            downloadUrl: "/apis/oas.yaml",
+            downloadUrl: "/apis/museus.yaml",
             hideSendButton: false,
             showSchemas: true,
           } satisfies OpenApiPlugin.Options,

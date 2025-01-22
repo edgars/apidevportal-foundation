@@ -4,11 +4,15 @@ const sidebar: SidebarsConfig = {
   apisidebar: [
     {
       type: "doc",
-      id: "QIAM-API/keycloak-admin-rest-api",
+      id: "QIAM-API/qiam-admin-rest-api",
     },
     {
       type: "category",
       label: "Attack Detection",
+      link: {
+        type: "doc",
+        id: "QIAM-API/attack-detection",
+      },
       items: [
         {
           type: "doc",
@@ -33,6 +37,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Authentication Management",
+      link: {
+        type: "doc",
+        id: "QIAM-API/authentication-management",
+      },
       items: [
         {
           type: "doc",
@@ -249,6 +257,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Client Attribute Certificate",
+      link: {
+        type: "doc",
+        id: "QIAM-API/client-attribute-certificate",
+      },
       items: [
         {
           type: "doc",
@@ -291,6 +303,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Client Initial Access",
+      link: {
+        type: "doc",
+        id: "QIAM-API/client-initial-access",
+      },
       items: [
         {
           type: "doc",
@@ -315,6 +331,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Client Registration Policy",
+      link: {
+        type: "doc",
+        id: "QIAM-API/client-registration-policy",
+      },
       items: [
         {
           type: "doc",
@@ -327,6 +347,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Client Role Mappings",
+      link: {
+        type: "doc",
+        id: "QIAM-API/client-role-mappings",
+      },
       items: [
         {
           type: "doc",
@@ -393,6 +417,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Client Scopes",
+      link: {
+        type: "doc",
+        id: "QIAM-API/client-scopes",
+      },
       items: [
         {
           type: "doc",
@@ -459,6 +487,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Clients",
+      link: {
+        type: "doc",
+        id: "QIAM-API/clients",
+      },
       items: [
         {
           type: "doc",
@@ -669,6 +701,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Component",
+      link: {
+        type: "doc",
+        id: "QIAM-API/component",
+      },
       items: [
         {
           type: "doc",
@@ -711,6 +747,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Groups",
+      link: {
+        type: "doc",
+        id: "QIAM-API/groups",
+      },
       items: [
         {
           type: "doc",
@@ -777,6 +817,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Identity Providers",
+      link: {
+        type: "doc",
+        id: "QIAM-API/identity-providers",
+      },
       items: [
         {
           type: "doc",
@@ -879,6 +923,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Key",
+      link: {
+        type: "doc",
+        id: "QIAM-API/key",
+      },
       items: [
         {
           type: "doc",
@@ -891,6 +939,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Protocol Mappers",
+      link: {
+        type: "doc",
+        id: "QIAM-API/protocol-mappers",
+      },
       items: [
         {
           type: "doc",
@@ -1023,6 +1075,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Realms Admin",
+      link: {
+        type: "doc",
+        id: "QIAM-API/realms-admin",
+      },
       items: [
         {
           type: "doc",
@@ -1287,6 +1343,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Role Mapper",
+      link: {
+        type: "doc",
+        id: "QIAM-API/role-mapper",
+      },
       items: [
         {
           type: "doc",
@@ -1365,6 +1425,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Roles",
+      link: {
+        type: "doc",
+        id: "QIAM-API/roles",
+      },
       items: [
         {
           type: "doc",
@@ -1539,6 +1603,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Roles (by ID)",
+      link: {
+        type: "doc",
+        id: "QIAM-API/roles-by-id",
+      },
       items: [
         {
           type: "doc",
@@ -1605,6 +1673,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Scope Mappings",
+      link: {
+        type: "doc",
+        id: "QIAM-API/scope-mappings",
+      },
       items: [
         {
           type: "doc",
@@ -1809,6 +1881,10 @@ const sidebar: SidebarsConfig = {
     {
       type: "category",
       label: "Users",
+      link: {
+        type: "doc",
+        id: "QIAM-API/users",
+      },
       items: [
         {
           type: "doc",

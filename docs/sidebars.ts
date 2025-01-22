@@ -1,6 +1,6 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-import kcSideBar from './docs/QIAM-API/sidebar';
+import kcSideBar from './docs/museus-apis/sidebar';
 
 /**
  * Creating a sidebar enables you to:
@@ -25,7 +25,7 @@ const sidebars: SidebarsConfig = {
 
       {
         type: "category",
-        label: "QIAM APIs",
+        label: "Museums APIs",
         link: {
           type: "generated-index",
           title: "QIAM APIs",

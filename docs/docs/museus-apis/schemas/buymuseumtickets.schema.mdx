@@ -1,0 +1,76 @@
+---
+id: buymuseumtickets
+title: "BuyMuseumTickets"
+description: "Data to purchase a ticket."
+sidebar_label: "BuyMuseumTickets"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"BuyMuseumTickets"}
+>
+</Heading>
+
+
+
+Data to purchase a ticket.
+
+<ul>
+  <SchemaItem
+    collapsible={false}
+    name={"email"}
+    required={false}
+    schemaName={"email"}
+    qualifierMessage={undefined}
+    schema={{"description":"Email address for ticket purchaser.","type":"string","format":"email","example":"museum-lover@example.com","title":"Email"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"ticketId"}
+    required={false}
+    schemaName={"uuid"}
+    qualifierMessage={undefined}
+    schema={{"description":"Unique identifier for museum ticket. Generated when purchased.","type":"string","format":"uuid","example":"a54a57ca-36f8-421b-a6b4-2e8f26858a4c","title":"TicketId"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"ticketDate"}
+    required={true}
+    schemaName={"date"}
+    qualifierMessage={undefined}
+    schema={{"type":"string","format":"date","example":"2023-10-29","title":"Date","description":"Date when this ticket can be used for museum entry."}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"ticketType"}
+    required={true}
+    schemaName={"TicketType (string)"}
+    qualifierMessage={"**Possible values:** [`event`, `general`]"}
+    schema={{"description":"Type of ticket being purchased. Use `general` for regular museum entry and `event` for tickets to special events.","type":"string","enum":["event","general"],"example":"event","title":"TicketType"}}
+  >
+    
+  </SchemaItem><SchemaItem
+    collapsible={false}
+    name={"eventId"}
+    required={false}
+    schemaName={"uuid"}
+    qualifierMessage={undefined}
+    schema={{"description":"Identifier for a special event.","type":"string","format":"uuid","example":"3be6453c-03eb-4357-ae5a-984a0e574a54","title":"EventId"}}
+  >
+    
+  </SchemaItem>
+</ul>
+            
